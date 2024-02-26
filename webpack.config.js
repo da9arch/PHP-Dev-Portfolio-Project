@@ -70,6 +70,7 @@ Encore
     //.autoProvidejQuery()
 
     .enablePostCssLoader()
+
 ;
 
 module.exports = Encore.getWebpackConfig();
