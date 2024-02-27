@@ -1,3 +1,12 @@
+import "./glightbox.min";
+import "./imagesloaded.pkgd.min";
+import "./isotope.pkgd.min";
+import "./jquery-3.6.0.min";
+import "./jquery.counterup.min";
+import "./jquery-migrate.min";
+import "./swiper-bundle.min";
+import "./waypoints.min";
+
 (function ($) {
 
     "use strict";

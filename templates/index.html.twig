@@ -14,7 +14,7 @@
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
 </head>
-<body class="bg-[#09090b]">
+<body class="bg-[#0D0D0D]">
 <!-- Header -->
 <header class="main-header">
     <!-- Header Top -->
@@ -22,53 +22,51 @@
         <div class="flex justify-between py-3">
             <div class="grow">
                 <div class="flex space-x-0 md:space-x-14">
-
                     <!-- Email -->
                     <div class="flex items-center space-x-2">
                         <i class="fa-solid fa-envelope text-new-500"></i>
                         <a
                                 href="danuvrabii@gmail.com"
                                 class="text-interface-200 text-base"
-                        >danuvrabii@gmail.com</a>
+                        >danuvrabii@gmail.com</a
+                        >
+                    </div>
+                    <!-- Phone -->
+                    <div class="space-x-2 hidden md:flex items-center">
+                        <i class="fa-solid fa-phone text-new-500"></i>
+                        <a href="tel:+0168833300" class="text-interface-200 text-base"
+                        >+373 67 319 113</a
+                        >
                     </div>
                 </div>
-
-                <!-- Phone -->
-                <div class="space-x-2 hidden md:flex items-center">
-                    <i class="fa-solid fa-phone text-new-500"></i>
-                    <a href="tel:+37367319113" class="text-interface-200 text-base"
-                    >+373 67 319 113</a
-                    >
-                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a
+                        href="https://www.facebook.com/iamdanielv/"
+                        class="group transition-all text-interface-200 hover:text-new-500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                        href="https://t.me/iamdanielv"
+                        class="group transition-all text-interface-200 hover:text-new-500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-telegram-plane"></i>
+                </a>
+                <a
+                        href="https://www.linkedin.com/in/danielvdev/"
+                        class="group transition-all text-interface-200 hover:text-new-500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
             </div>
         </div>
-        <div class="flex items-center space-x-6">
-            <a
-                    href="https://www.facebook.com/iamdanielv/"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-facebook"></i>
-            </a>
-            <a
-                    href="https://t.me/iamdanielv"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-telegram-plane"></i>
-            </a>
-            <a
-                    href="https://www.linkedin.com/in/danielvdev/"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </div>
-    </div>
     </div>
     <!-- Header Menu -->
     <div class="main-menu sticky-header">
@@ -301,7 +299,7 @@
                 <!-- Right -->
                 <div class="lg:w-1/2">
                     <div>
-                        <img src="assets/images/hero/hero-three/model.png" alt=""/>
+                        <img src="{{ asset('MainImage3.png') }}" alt=""/>
                     </div>
                 </div>
             </div>
@@ -2340,30 +2338,4 @@
 <!-- Copyright End -->
 {% block body %}{% endblock %}
 </body>
-<!-- Jquery JS -->
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-
-<!-- Migrate -->
-<script src="assets/js/jquery-migrate.min.js"></script>
-
-<!-- CounterUp -->
-<script src="assets/js/jquery.counterup.min.js"></script>
-
-<!-- CounterUp -->
-<script src="assets/js/waypoints.min.js"></script>
-
-<!-- Isotope -->
-<script src="assets/js/isotope.pkgd.min.js"></script>
-
-<!-- Imagesloaded -->
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-
-<!-- Lightbox -->
-<script src="assets/js/glightbox.min.js"></script>
-
-<!-- Swiper -->
-<script src="assets/js/swiper-bundle.min.js"></script>
-
-<!-- JS Files -->
-<script src="assets/js/app.js"></script>
 </html>

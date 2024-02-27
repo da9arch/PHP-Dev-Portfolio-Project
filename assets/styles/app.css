@@ -3120,6 +3120,11 @@ select{
     border-style: none;
 }
 
+.border-\[\#232326\]{
+    --tw-border-opacity: 1;
+    border-color: rgb(35 35 38 / var(--tw-border-opacity));
+}
+
 .border-\[\#1C2134\]{
     --tw-border-opacity: 1;
     border-color: rgb(28 33 52 / var(--tw-border-opacity));
@@ -3159,6 +3164,8 @@ select{
     --tw-border-opacity: 1;
     border-color: rgb(223 234 249 / var(--tw-border-opacity));
 }
+
+
 
 .border-\[\#f1f1f1\]{
     --tw-border-opacity: 1;
@@ -3297,9 +3304,9 @@ select{
     background-color: rgb(248 251 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#09090b\]{
+.bg-\[\#0D0D0D\]{
     --tw-bg-opacity: 1;
-    background-color: rgb(9 9 11 / var(--tw-bg-opacity));
+    background-color: rgb(13 13 13 / var(--tw-bg-opacity));
 }
 
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
