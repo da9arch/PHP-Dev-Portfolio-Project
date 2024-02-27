@@ -3,18 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{% block title %}Home Developer - Difolio{% endblock %}</title>
+    <title>{% block title %}Home Dev{% endblock %}</title>
 
-    <link rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-sizФe=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-    <link href="/assets/css/font-awesome-all.min.css" rel="stylesheet"/>
-    <!-- GLightbox -->
-    <link href="assets/css/glightbox.min.css" rel="stylesheet" />
-    <!-- Swiper -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <!-- Main -->
-    <link href="assets/css/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('styles/output.css') }}">
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
@@ -24,7 +14,7 @@
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
 </head>
-<body class="bg-[#050F25]">
+<body class="bg-[#09090b]">
 <!-- Header -->
 <header class="main-header">
     <!-- Header Top -->
@@ -32,56 +22,50 @@
         <div class="flex justify-between py-3">
             <div class="grow">
                 <div class="flex space-x-0 md:space-x-14">
+
                     <!-- Email -->
                     <div class="flex items-center space-x-2">
                         <i class="fa-solid fa-envelope text-new-500"></i>
                         <a
-                                href="mailto:info@example.com"
+                                href="danuvrabii@gmail.com"
                                 class="text-interface-200 text-base"
-                        >info@example.com</a>
+                        >danuvrabii@gmail.com</a>
                     </div>
                 </div>
+
                 <!-- Phone -->
                 <div class="space-x-2 hidden md:flex items-center">
                     <i class="fa-solid fa-phone text-new-500"></i>
-                    <a href="tel:+0168833300" class="text-interface-200 text-base"
-                    >+880 1688 33300</a
+                    <a href="tel:+37367319113" class="text-interface-200 text-base"
+                    >+373 67 319 113</a
                     >
                 </div>
             </div>
         </div>
         <div class="flex items-center space-x-6">
             <a
-                    href="http://"
+                    href="https://www.facebook.com/iamdanielv/"
                     class="group transition-all text-interface-200 hover:text-new-500"
                     target="_blank"
                     rel="noopener noreferrer"
             >
-                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-facebook"></i>
             </a>
             <a
-                    href="http://"
+                    href="https://t.me/iamdanielv"
                     class="group transition-all text-interface-200 hover:text-new-500"
                     target="_blank"
                     rel="noopener noreferrer"
             >
-                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-telegram-plane"></i>
             </a>
             <a
-                    href="http://"
+                    href="https://www.linkedin.com/in/danielvdev/"
                     class="group transition-all text-interface-200 hover:text-new-500"
                     target="_blank"
                     rel="noopener noreferrer"
             >
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a
-                    href="http://"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-brands fa-linkedin"></i>
             </a>
         </div>
     </div>
@@ -104,30 +88,7 @@
                         <!-- Demo-->
                         <li class="dropdown__item">
                             <div class="nav__link dropdown__button">
-                                Home<i class="fa-solid fa-angle-down dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="index.html" class="dropdown__link">Product Designer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-designer.html" class="dropdown__link">Designer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-dev.html" class="dropdown__link">Developer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-photographer.html" class="dropdown__link">Photographer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-teacher.html" class="dropdown__link">Teacher</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-lawyer.html" class="dropdown__link">Lawyer</a>
-                                    </li>
-                                </ul>
-                            </div>
+                                Home<i class="fa-solid"></i>
                         </li>
                         <!-- Services-->
                         <li class="dropdown__item">
@@ -288,8 +249,8 @@
                     <h1
                             class="text-5xl leading-snug xl:text-[66px] mb-8 xl:leading-normal font-bold text-white"
                     >
-                        Hey, I am <br />
-                        Daniel Vrabii <br />
+                        Hey, I am <br/>
+                        Daniel Vrabii <br/>
                         <span
                                 class="inline-block"
                                 style="
@@ -326,33 +287,6 @@
                                 />
                             </svg>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=XNhiqQJ01hQ" class="flex video-popup items-center gap-5">
-                  <span
-                          class="w-[60px] pulsing-dev h-[60px] rounded-full grid place-items-center border border-new-500"
-                  >
-                    <svg
-                            width="18"
-                            height="22"
-                            viewBox="0 0 18 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                              d="M0 18.4719V3.52806C0 1.14774 2.63921 -0.284513 4.63497 1.01273L16.1303 8.48467C17.9503 9.6677 17.9503 12.3323 16.1303 13.5153L4.63496 20.9873C2.63921 22.2845 0 20.8523 0 18.4719Z"
-                              fill="#DAED1A"
-                      />
-                    </svg>
-                  </span>
-                            <span
-                            ><span class="text-white uppercase text-lg font-medium"
-                                >WATCH</span
-                                >
-                    <br />
-                    <span class="text-base font-medium text-interface-200"
-                    >Intro Video</span
-                    ></span
-                            >
-                        </a>
                     </div>
                     <div class="pt-14">
                         <p class="text-base text-interface-200">
@@ -367,7 +301,7 @@
                 <!-- Right -->
                 <div class="lg:w-1/2">
                     <div>
-                        <img src="assets/images/hero/hero-three/model.png" alt="" />
+                        <img src="assets/images/hero/hero-three/model.png" alt=""/>
                     </div>
                 </div>
             </div>
@@ -382,7 +316,7 @@
                 <div class="group">
                     <a
                             href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
+                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#3d3d3d] border-[#3A3E4E] items-center justify-center"
                     >
                         <svg
                                 class="group-hover:fill-interface-100 fill-white"
@@ -418,7 +352,7 @@
                             </g>
                             <defs>
                                 <clipPath id="clip0_537_18847">
-                                    <rect width="40" height="40" />
+                                    <rect width="40" height="40"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -431,7 +365,7 @@
                 <div class="group">
                     <a
                             href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
+                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#3d3d3d] border-[#3A3E4E] items-center justify-center"
                     >
                         <svg
                                 class="fill-white group-hover:fill-interface-500"
@@ -469,7 +403,7 @@
                             </g>
                             <defs>
                                 <clipPath id="clip0_537_18858">
-                                    <rect width="40" height="40" />
+                                    <rect width="40" height="40"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -483,7 +417,7 @@
                 <div class="group">
                     <a
                             href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
+                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#3d3d3d] border-[#3A3E4E] items-center justify-center"
                     >
                         <svg
                                 class="fill-white group-hover:fill-interface-100"
@@ -512,7 +446,7 @@
                 <div class="group">
                     <a
                             href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
+                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#3d3d3d] border-[#3A3E4E] items-center justify-center"
                     >
                         <svg
                                 class="fill-white group-hover:fill-interface-100"
@@ -529,7 +463,7 @@
                             </g>
                             <defs>
                                 <clipPath id="clip0_537_18883">
-                                    <rect width="40" height="40" />
+                                    <rect width="40" height="40"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -695,7 +629,7 @@
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_123_2937">
-                                            <rect width="58" height="58" fill="white" />
+                                            <rect width="58" height="58" fill="white"/>
                                         </clipPath>
                                     </defs>
                                 </svg>
@@ -925,7 +859,7 @@
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_442_1156">
-                                            <rect width="58" height="58" fill="white" />
+                                            <rect width="58" height="58" fill="white"/>
                                         </clipPath>
                                     </defs>
                                 </svg>
@@ -1081,7 +1015,7 @@
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_123_2937">
-                                            <rect width="58" height="58" fill="white" />
+                                            <rect width="58" height="58" fill="white"/>
                                         </clipPath>
                                     </defs>
                                 </svg>
@@ -1153,10 +1087,10 @@
                             </div>
                             <div class="flex space-x-2 items-center">
                                 <h3 class="text-7xl leading-none text-new-500 font-bold">
-                                    5
+                                    1
                                 </h3>
                                 <p class="text-lg text-white font-medium">
-                                    Years <br />
+                                    Years <br/>
                                     Experience
                                 </p>
                             </div>
@@ -1171,7 +1105,7 @@
                         </p>
                     </div>
                     <div class="mx-auto">
-                        <img src="assets/images/about/male.png" class="w-full" alt="" />
+                        <img src="assets/images/about/male.png" class="w-full" alt=""/>
                     </div>
                     <div>
                         <ul class="divide-y divide-[#494C5F]">
@@ -1321,63 +1255,63 @@
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Html</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >CSS</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Front-end</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >PHP</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Back-end</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Java Script</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Laravel</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >C++</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Figma</a
                                 >
                             </li>
@@ -1393,7 +1327,7 @@
                         <ul class="mt-7 flex flex-wrap gap-x-12 gap-y-7">
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="52"
                                         height="53"
                                         viewBox="0 0 52 53"
@@ -1421,7 +1355,7 @@
                             </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="53"
                                         height="53"
                                         viewBox="0 0 53 53"
@@ -1446,7 +1380,7 @@
                             </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="53"
                                         height="53"
                                         viewBox="0 0 53 53"
@@ -1471,7 +1405,7 @@
                             </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="54"
                                         height="53"
                                         viewBox="0 0 54 53"
@@ -1496,7 +1430,7 @@
                             </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="53"
                                         height="53"
                                         viewBox="0 0 53 53"
@@ -1514,117 +1448,6 @@
                                                     width="52.7879"
                                                     height="52"
                                                     transform="translate(0 0.288086)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
-                                        width="53"
-                                        height="53"
-                                        viewBox="0 0 53 53"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_537_18565)">
-                                        <path
-                                                d="M27.177 27.6484C27.177 27.6484 27.1358 27.6484 27.0945 27.6484C25.6512 31.8546 24.2079 36.0608 22.7646 40.267C25.8162 41.133 28.7853 41.0505 31.7131 40.0608C30.1873 35.8959 28.7028 31.7721 27.177 27.6484Z"
-                                        />
-                                        <path
-                                                d="M13.6103 20.4326C13.5691 20.4326 13.5691 20.4326 13.5279 20.4326C11.9196 24.2677 11.8371 28.144 13.4866 32.0202C14.8887 35.3192 17.2392 37.7522 20.4557 39.4017C20.4969 39.4017 20.4969 39.3605 20.5382 39.3605C18.2289 33.0099 15.9196 26.7419 13.6103 20.4326Z"
-                                        />
-                                        <path
-                                                d="M35.8373 22.1232C35.5074 21.5046 35.1362 20.9273 34.7651 20.3087C34.4352 19.7314 34.1878 19.1129 34.1053 18.4531C33.9403 17.0922 34.8476 15.8139 36.2084 15.5665C36.3321 15.5252 36.497 15.5252 36.7445 15.484C32.7032 12.1025 28.2084 10.9067 23.1775 12.185C19.5898 13.0922 16.8269 15.1541 14.6826 18.2881C15.4661 18.2881 16.1672 18.2881 16.8269 18.2881C17.6929 18.2469 18.5589 18.1644 19.4249 18.1232C19.8373 18.0819 20.0847 18.2881 20.1259 18.618C20.1672 18.9891 20.0022 19.2366 19.5486 19.2778C19.4249 19.319 19.3012 19.319 19.1775 19.319C18.7651 19.3603 18.394 19.4015 17.9403 19.4428C19.7135 24.7211 21.4867 29.9582 23.2187 35.1541C23.3012 35.1129 23.3424 35.0716 23.3424 35.0304C24.3733 31.9788 25.4043 28.9273 26.394 25.8345C26.4352 25.7108 26.394 25.5046 26.3527 25.3809C25.6929 23.484 24.9919 21.6283 24.2909 19.7314C24.2084 19.484 24.0847 19.4015 23.8373 19.4015C23.4249 19.4015 23.0125 19.319 22.6001 19.2778C22.2702 19.2366 22.1053 18.9891 22.1053 18.6593C22.1465 18.3294 22.3527 18.1232 22.6826 18.1232C22.8476 18.1232 22.9713 18.1644 23.1362 18.1644C24.7032 18.2056 26.3115 18.2469 27.8785 18.2881C28.7032 18.2881 29.5692 18.2056 30.394 18.1644C30.7651 18.1644 31.0125 18.3706 31.0537 18.7005C31.095 19.0304 30.8888 19.2778 30.5589 19.319C30.394 19.3603 30.2702 19.3603 30.1053 19.3603C29.6929 19.4015 29.2806 19.4428 28.8682 19.484C30.6414 24.7211 32.3733 29.8757 34.1465 35.1541C34.1878 35.0304 34.229 34.9891 34.229 34.9479C34.9713 32.5149 35.6723 30.0819 36.4146 27.6489C36.9919 25.7108 36.8269 23.8551 35.8373 22.1232Z"
-                                        />
-                                        <path
-                                                d="M39.837 0.308594H13.9401C6.76485 0.308594 0.90918 6.16426 0.90918 13.3395V39.2777C0.90918 46.4117 6.76485 52.2674 13.9401 52.2674H39.8783C47.0535 52.2674 52.9092 46.4117 52.9092 39.2364V13.3395C52.8679 6.16426 47.0123 0.308594 39.837 0.308594ZM42.971 27.1127C42.971 27.2364 42.971 27.3189 42.971 27.4426C42.8473 29.5869 42.3112 31.6488 41.3215 33.5457C38.7236 38.4529 34.7236 41.3395 29.1978 42.2467C28.703 42.3292 28.2081 42.3704 27.7133 42.3704H26.0638C25.9813 42.3704 25.8576 42.3704 25.7339 42.3704C23.5896 42.2467 21.569 41.7519 19.7133 40.7622C14.7648 38.1643 11.8783 34.1643 10.971 28.6385C10.8473 28.1024 10.8061 27.6488 10.8061 27.1127V25.4632C10.8061 25.3808 10.8061 25.257 10.8061 25.1333C10.9298 22.9478 11.4659 20.8859 12.4968 18.989C15.0947 14.123 19.0947 11.2777 24.538 10.3705C25.0329 10.288 25.569 10.2467 26.0638 10.2467H27.7133C27.837 10.2467 27.9195 10.2467 28.0432 10.2467C30.1463 10.3704 32.1669 10.8653 34.0638 11.855C39.0123 14.4529 41.9401 18.4529 42.8473 24.0199C42.9298 24.5148 42.971 25.0096 42.971 25.5045V27.1127Z"
-                                        />
-                                        <path
-                                                d="M39.7541 19.4014C39.7953 20.5148 39.7953 21.5457 39.6304 22.6179C39.4242 23.8137 39.053 24.9684 38.6407 26.123C37.1974 30.123 35.8365 34.123 34.4757 38.123C34.3932 38.3292 34.3108 38.5766 34.2695 38.7828C34.3108 38.7828 34.3108 38.824 34.352 38.824C38.2695 36.3911 40.6613 32.8859 41.3623 28.3086C41.8159 25.1746 41.2798 22.2055 39.7541 19.4014Z"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_537_18565">
-                                            <rect
-                                                    width="52"
-                                                    height="52"
-                                                    transform="translate(0.90918 0.288086)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
-                                        width="53"
-                                        height="53"
-                                        viewBox="0 0 53 53"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_537_18562)">
-                                        <path
-                                                d="M12.6904 30.3506C12.6904 27.2704 15.1962 24.7646 18.2764 24.7646H35.542C36.942 24.7646 38.0811 23.6256 38.0811 22.2256V7.90527C38.0811 3.70511 34.664 0.288086 30.4639 0.288086H23.3545C19.1543 0.288086 15.7373 3.70511 15.7373 7.90527V12.0693H26.9092C27.7506 12.0693 28.4326 12.7513 28.4326 13.5928C28.4326 14.4342 27.7506 15.1162 26.9092 15.1162H8.52637C4.3262 15.1162 0.90918 18.5332 0.90918 22.7334V29.8428C0.90918 34.0429 4.3262 37.46 8.52637 37.46H12.6904V30.3506ZM23.3545 8.00684C22.513 8.00684 21.8311 7.32486 21.8311 6.4834C21.8311 5.64194 22.513 4.95996 23.3545 4.95996C24.196 4.95996 24.8779 5.64194 24.8779 6.4834C24.8779 7.32486 24.196 8.00684 23.3545 8.00684Z"
-                                        />
-                                        <path
-                                                d="M45.292 15.1162H41.1279V22.2256C41.1279 25.3058 38.6222 27.8115 35.542 27.8115H18.2764C16.8763 27.8115 15.7373 28.9505 15.7373 30.3506V44.6709C15.7373 48.8711 19.1543 52.2881 23.3545 52.2881H30.4639C34.664 52.2881 38.0811 48.8711 38.0811 44.6709V40.5068H26.9092C26.0677 40.5068 25.3857 39.8249 25.3857 38.9834C25.3857 38.1419 26.0677 37.46 26.9092 37.46H45.292C49.4922 37.46 52.9092 34.0429 52.9092 29.8428V22.7334C52.9092 18.5332 49.4922 15.1162 45.292 15.1162ZM30.4639 44.5693C31.3053 44.5693 31.9873 45.2513 31.9873 46.0928C31.9873 46.9342 31.3053 47.6162 30.4639 47.6162C29.6224 47.6162 28.9404 46.9342 28.9404 46.0928C28.9404 45.2513 29.6224 44.5693 30.4639 44.5693Z"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_537_18562">
-                                            <rect
-                                                    width="52"
-                                                    height="52"
-                                                    transform="translate(0.90918 0.288086)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
-                                        width="53"
-                                        height="53"
-                                        viewBox="0 0 53 53"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_537_18581)">
-                                        <path
-                                                d="M47.2903 52.2881H6.52805C3.42489 52.2881 0.90918 49.7724 0.90918 46.6692V5.90696C0.90918 2.80379 3.42489 0.288086 6.52805 0.288086H47.2902C50.3935 0.288086 52.9091 2.80379 52.9091 5.90696V46.6691C52.9092 49.7724 50.3935 52.2881 47.2903 52.2881Z"
-                                        />
-                                        <path
-                                                d="M26.9625 6.36523C15.9763 6.3626 7.06797 15.2666 7.06543 26.2528C7.06289 37.239 15.9668 46.1472 26.9531 46.1499C37.9393 46.1525 46.8475 37.2485 46.8502 26.2622C46.8502 26.2606 46.8502 26.2591 46.8502 26.2575C46.8501 15.2731 37.9469 6.36777 26.9625 6.36523Z"
-                                                fill="#091530"
-                                        />
-                                        <path
-                                                d="M18.6719 17.9668H21.9873V34.5437H18.6719V17.9668Z"
-                                                fill="currenColor"
-                                        />
-                                        <path
-                                                d="M25.3027 31.2285H35.2489V34.5439H25.3027V31.2285Z"
-                                                fill="currenColor"
-                                        />
-                                        <path
-                                                d="M25.3027 24.5977H35.2489V27.913H25.3027V24.5977Z"
-                                                fill="currenColor"
-                                        />
-                                        <path
-                                                d="M25.3027 17.9668H35.2489V21.2822H25.3027V17.9668Z"
-                                                fill="currenColor"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_537_18581">
-                                            <rect
-                                                    width="52"
-                                                    height="52"
-                                                    fill="white"
-                                                    transform="translate(0.90918 0.288086)"
                                             />
                                         </clipPath>
                                     </defs>
@@ -1959,7 +1782,7 @@
                                 mollis.
                             </q>
                             <div class="flex space-x-4">
-                                <img src="assets/images/testimonial/av-7.png" alt="" />
+                                <img src="assets/images/testimonial/av-7.png" alt=""/>
                                 <div>
                                     <h4 class="font-semibold text-white text-xl">
                                         Adward Gull
@@ -2014,7 +1837,7 @@
                                 mollis.
                             </q>
                             <div class="flex space-x-4">
-                                <img src="assets/images/testimonial/av-10.png" alt="" />
+                                <img src="assets/images/testimonial/av-10.png" alt=""/>
                                 <div>
                                     <h4 class="font-semibold text-white text-xl">
                                         Esthar Howard
@@ -2069,7 +1892,7 @@
                                 mollis.
                             </q>
                             <div class="flex space-x-4">
-                                <img src="assets/images/testimonial/av-4.png" alt="" />
+                                <img src="assets/images/testimonial/av-4.png" alt=""/>
                                 <div>
                                     <h4 class="font-semibold text-white text-xl">
                                         Hugo Boss
@@ -2274,7 +2097,7 @@
             >
                 <div class="xl:w-6/12">
                     <h2 class="text-4xl leading-normal lg:text-5xl lg:leading-snug font-bold text-white">
-                        Have a project in mind? <br />
+                        Have a project in mind? <br/>
                         Let’s get to work.👋📫
                     </h2>
                 </div>
@@ -2331,7 +2154,7 @@
         >
             <div class="md:col-span-6 lg:col-span-3">
                 <a href="index.html" class="block mb-7">
-                    <img src="assets/images/logo/logo-dev-f.svg" alt="" />
+                    <img src="assets/images/logo/logo-dev-f.svg" alt=""/>
                 </a>
                 <p class="text-white text-base">
                     We work with a passion of taking challenges and creating new ones
