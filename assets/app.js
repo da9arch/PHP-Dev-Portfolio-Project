@@ -1,3 +1,14 @@
+
+import './js/glightbox.min.js';
+import './js/imagesloaded.pkgd.min.js';
+import './js/isotope.pkgd.min.js';
+import './js/jquery.counterup.min.js';
+import './js/jquery-3.6.0.min.js';
+import './js/jquery-migrate.min.js';
+import './js/swiper-bundle.min.js';
+import './js/waypoints.min.js';
+import './js/app.js';
+
 import './bootstrap.js';
 /*
  * Welcome to your app's main JavaScript file!
