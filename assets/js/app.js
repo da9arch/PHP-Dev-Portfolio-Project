@@ -1,3 +1,13 @@
+import './glightbox.min.js';
+import './imagesloaded.pkgd.min.js';
+import './isotope.pkgd.min.js';
+import './jquery.counterup.min.js';
+import './jquery-3.6.0.min.js';
+import './jquery-migrate.min.js';
+import './swiper-bundle.min.js';
+import './waypoints.min';
+import './app.js';
+
 (function ($) {
 
     "use strict";
