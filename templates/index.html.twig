@@ -3,18 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{% block title %}Home Developer - Difolio{% endblock %}</title>
+    <title>{% block title %}Home Dev{% endblock %}</title>
 
-    <link rel="icon"
-          href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-sizФe=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-    <link href="/assets/css/font-awesome-all.min.css" rel="stylesheet"/>
-    <!-- GLightbox -->
-    <link href="assets/css/glightbox.min.css" rel="stylesheet" />
-    <!-- Swiper -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <!-- Main -->
-    <link href="assets/css/output.css" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('styles/output.css') }}">
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
     {% endblock %}
@@ -24,7 +14,7 @@
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
 </head>
-<body class="bg-[#050F25]">
+<body class="bg-[#0D0D0D]">
 <!-- Header -->
 <header class="main-header">
     <!-- Header Top -->
@@ -36,243 +26,51 @@
                     <div class="flex items-center space-x-2">
                         <i class="fa-solid fa-envelope text-new-500"></i>
                         <a
-                                href="mailto:info@example.com"
+                                href="danuvrabii@gmail.com"
                                 class="text-interface-200 text-base"
-                        >info@example.com</a>
+                        >danuvrabii@gmail.com</a
+                        >
                     </div>
-                </div>
-                <!-- Phone -->
-                <div class="space-x-2 hidden md:flex items-center">
-                    <i class="fa-solid fa-phone text-new-500"></i>
-                    <a href="tel:+0168833300" class="text-interface-200 text-base"
-                    >+880 1688 33300</a
-                    >
+                    <!-- Phone -->
+                    <div class="space-x-2 hidden md:flex items-center">
+                        <i class="fa-solid fa-phone text-new-500"></i>
+                        <a href="tel:+0168833300" class="text-interface-200 text-base"
+                        >+373 67 319 113</a
+                        >
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="flex items-center space-x-6">
-            <a
-                    href="http://"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-facebook-f"></i>
-            </a>
-            <a
-                    href="http://"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-twitter"></i>
-            </a>
-            <a
-                    href="http://"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-youtube"></i>
-            </a>
-            <a
-                    href="http://"
-                    class="group transition-all text-interface-200 hover:text-new-500"
-                    target="_blank"
-                    rel="noopener noreferrer"
-            >
-                <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-        </div>
-    </div>
-    </div>
-    <!-- Header Menu -->
-    <div class="main-menu sticky-header">
-        <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <nav class="nav nav-dev">
-                <div class="nav__data">
-                    <a href="index-dev.html" class="nav__logo">
-                        <img src="assets/images/logo/logo-dev-m.svg" alt=""/>
-                    </a>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="fa-solid fa-bars nav__toggle-menu"></i>
-                        <i class="fa-solid fa-xmark nav__toggle-close"></i>
-                    </div>
-                </div>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <!-- Demo-->
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                Home<i class="fa-solid fa-angle-down dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="index.html" class="dropdown__link">Product Designer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-designer.html" class="dropdown__link">Designer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-dev.html" class="dropdown__link">Developer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-photographer.html" class="dropdown__link">Photographer</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-teacher.html" class="dropdown__link">Teacher</a>
-                                    </li>
-                                    <li>
-                                        <a href="index-lawyer.html" class="dropdown__link">Lawyer</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Services-->
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                Services<i class="fa-solid fa-angle-down dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <ul class="dropdown__list ">
-                                    <li>
-                                        <a href="service.html" class="dropdown__link">Servies </a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details-1.html" class="dropdown__link">Services Details One</a>
-                                    </li>
-                                    <li>
-                                        <a href="service-details-2.html" class="dropdown__link">Services Details Two</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Portfolio-->
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                Portfolio<i class="fa-solid fa-angle-down dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <ul class="dropdown__list ">
-                                    <li>
-                                        <a href="portfolio-grid.html" class="dropdown__link">Portfolio Grid</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio-grid-2.html" class="dropdown__link">Portfolio Grid Two</a>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio-details.html" class="dropdown__link">Portfolio Details</a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details-2.html" class="dropdown__link">Portfolio Details
-                                            Two</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Blog-->
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                Blog<i class="fa-solid fa-angle-down dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <ul class="dropdown__list ">
-                                    <li>
-                                        <a href="blog-grid.html" class="dropdown__link">Blog Grid</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-sidebar.html" class="dropdown__link">Blog Sidebar</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog-details.html" class="dropdown__link">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <!-- Pages-->
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                Pages<i class="fa-solid fa-angle-down dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="team.html" class="dropdown__link">Team</a>
-                                    </li>
-                                    <li>
-                                        <a href="team-details.html" class="dropdown__link">Team Details</a>
-                                    </li>
-                                    <li>
-                                        <a href="achievement.html" class="dropdown__link">Achivement</a>
-                                    </li>
-                                    <li>
-                                        <a href="gallery.html" class="dropdown__link">Gallery</a>
-                                    </li>
-                                    <li>
-                                        <a href="products.html" class="dropdown__link">Products</a>
-                                    </li>
-                                    <li>
-                                        <a href="product-details-2.html" class="dropdown__link">Products Details</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact-us.html" class="dropdown__link">Contact</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="dropdown__item">
-                            <div class="nav__link dropdown__button">
-                                About<i class="fa-solid fa-angle-down dropdown__arrow"></i>
-                            </div>
-                            <div class="dropdown__container">
-                                <ul class="dropdown__list">
-                                    <li>
-                                        <a href="about-designer.html" class="dropdown__link">About One</a>
-                                    </li>
-                                    <li>
-                                        <a href="about-product-designer.html" class="dropdown__link">About Two</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="hidden xl:block">
-                    <a
-                            href="contact-us.html"
-                            class="bg-new-500 text-interface-100 px-6 py-4 font-medium rounded-lg inline-flex justify-center items-center group transition-all hover:bg-new-600"
-                    >
-                        <span>Let's Talk</span>
-                        <svg
-                                class=" stroke-interface-100 transform translate transition-transform group-hover:translate-x-2"
-
-                                width="24"
-                                height="25"
-                                viewBox="0 0 24 25"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                    d="M14 16.5L18 12.5M18 12.5L14 8.5M18 12.5L6 12.5"
-
-                                    stroke-width="1.5"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                            />
-                        </svg>
-                    </a>
-                </div>
-            </nav>
+            <div class="flex items-center space-x-6">
+                <a
+                        href="https://www.facebook.com/iamdanielv/"
+                        class="group transition-all text-interface-200 hover:text-new-500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a
+                        href="https://t.me/iamdanielv"
+                        class="group transition-all text-interface-200 hover:text-new-500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-telegram-plane"></i>
+                </a>
+                <a
+                        href="https://www.linkedin.com/in/danielvdev/"
+                        class="group transition-all text-interface-200 hover:text-new-500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
         </div>
     </div>
 </header>
-<!-- Header End -->
-
 <!-- Main  -->
 <main>
-
     <!-- Hero Start -->
     <section
             class="pt-44"
@@ -288,16 +86,16 @@
                     <h1
                             class="text-5xl leading-snug xl:text-[66px] mb-8 xl:leading-normal font-bold text-white"
                     >
-                        Hey, I am <br />
-                        Daniel Vrabii <br />
+                        Hey, I am <br/>
+                        Daniel Vrabii <br/>
                         <span
                                 class="inline-block"
                                 style="
-                    background: url('assets/images/hero/hero-one/wide-line.svg')
-                      no-repeat bottom;
-                  "
+                                        background: url('{{ asset('images/wide-line.svg') }}')
+                                        no-repeat bottom;
+                                        "
                         >
-                  Web Developer</span
+                  PHP Developer</span
                         >
                     </h1>
                     <p class="text-2xl text-borderl-500 mb-4">
@@ -326,33 +124,6 @@
                                 />
                             </svg>
                         </a>
-                        <a href="https://www.youtube.com/watch?v=XNhiqQJ01hQ" class="flex video-popup items-center gap-5">
-                  <span
-                          class="w-[60px] pulsing-dev h-[60px] rounded-full grid place-items-center border border-new-500"
-                  >
-                    <svg
-                            width="18"
-                            height="22"
-                            viewBox="0 0 18 22"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                              d="M0 18.4719V3.52806C0 1.14774 2.63921 -0.284513 4.63497 1.01273L16.1303 8.48467C17.9503 9.6677 17.9503 12.3323 16.1303 13.5153L4.63496 20.9873C2.63921 22.2845 0 20.8523 0 18.4719Z"
-                              fill="#DAED1A"
-                      />
-                    </svg>
-                  </span>
-                            <span
-                            ><span class="text-white uppercase text-lg font-medium"
-                                >WATCH</span
-                                >
-                    <br />
-                    <span class="text-base font-medium text-interface-200"
-                    >Intro Video</span
-                    ></span
-                            >
-                        </a>
                     </div>
                     <div class="pt-14">
                         <p class="text-base text-interface-200">
@@ -367,7 +138,7 @@
                 <!-- Right -->
                 <div class="lg:w-1/2">
                     <div>
-                        <img src="assets/images/hero/hero-three/model.png" alt="" />
+                        <img src="{{ asset('images/MainImage4.png') }}" alt=""/>
                     </div>
                 </div>
             </div>
@@ -381,57 +152,8 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7">
                 <div class="group">
                     <a
-                            href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
-                    >
-                        <svg
-                                class="group-hover:fill-interface-100 fill-white"
-                                width="40"
-                                height="40"
-                                viewBox="0 0 40 40"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <g clip-path="url(#clip0_537_18847)">
-                                <path
-                                        d="M10.7402 24.731L27.9702 28.391L28.6919 24.9093L11.4619 21.2227L10.7402 24.731Z"
-                                />
-                                <path
-                                        d="M10.3584 29.2852H27.9684V32.8302H10.3584V29.2852Z"
-                                />
-                                <path
-                                        d="M13 16.385L28.9533 23.9283L30.4317 20.6883L14.47 13.125L13 16.385Z"
-                                />
-                                <path
-                                        d="M28.955 23.9294L28.9533 23.9277L28.9517 23.9294H28.955Z"
-                                        fill="white"
-                                />
-                                <path
-                                        d="M3.3335 25.7148V39.9998H34.9868V25.7148H31.4652V36.4282H6.85516V25.7148H3.3335Z"
-                                />
-                                <path
-                                        d="M17.4219 8.4375L30.9369 19.8925L33.1802 17.1425L19.6652 5.6875L17.4219 8.4375Z"
-                                />
-                                <path
-                                        d="M36.6669 14.3117L26.1635 0L23.3452 2.14333L33.8485 16.455L36.6669 14.3117Z"
-                                />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_537_18847">
-                                    <rect width="40" height="40" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                        <span
-                                class="text-white transition-all group-hover:text-interface-100 text-2xl font-semibold"
-                        >S. Overlfow</span
-                        >
-                    </a>
-                </div>
-                <div class="group">
-                    <a
-                            href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
+                            href="https://github.com/da9arch"
+                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#3d3d3d] border-[#3A3E4E] items-center justify-center"
                     >
                         <svg
                                 class="fill-white group-hover:fill-interface-500"
@@ -469,7 +191,7 @@
                             </g>
                             <defs>
                                 <clipPath id="clip0_537_18858">
-                                    <rect width="40" height="40" />
+                                    <rect width="40" height="40"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -482,37 +204,8 @@
                 </div>
                 <div class="group">
                     <a
-                            href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
-                    >
-                        <svg
-                                class="fill-white group-hover:fill-interface-100"
-                                width="40"
-                                height="40"
-                                viewBox="0 0 40 40"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                        >
-                            <path
-                                    d="M22.5622 19.9991C22.5622 26.2723 17.5115 31.3577 11.2811 31.3577C5.0507 31.3577 0 26.2723 0 19.9991C0 13.726 5.0507 8.64062 11.2811 8.64062C17.5114 8.64062 22.5622 13.726 22.5622 19.9991Z"
-                            />
-                            <path
-                                    d="M34.9378 19.9987C34.9378 25.9038 32.4124 30.6907 29.2973 30.6907C26.1821 30.6907 23.6567 25.9038 23.6567 19.9987C23.6567 14.0936 26.1821 9.30664 29.2973 9.30664C32.4125 9.30664 34.9378 14.0936 34.9378 19.9987Z"
-                            />
-                            <path
-                                    d="M39.9998 19.9995C39.9998 25.2902 39.1116 29.5791 38.016 29.5791C36.9203 29.5791 36.0322 25.2902 36.0322 19.9995C36.0322 14.7088 36.9203 10.4199 38.016 10.4199C39.1116 10.4199 39.9998 14.7088 39.9998 19.9995Z"
-                            />
-                        </svg>
-                        <span
-                                class="text-white transition-all group-hover:text-interface-100 text-2xl font-semibold"
-                        >Medium</span
-                        >
-                    </a>
-                </div>
-                <div class="group">
-                    <a
-                            href="#"
-                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#0A1429] border-[#3A3E4E] items-center justify-center"
+                            href="https://www.linkedin.com/in/danielvdev"
+                            class="group-hover:bg-new-500 group-hover:border-transparent transition-all flex space-x-3 p-8 rounded-xl border border-dashed bg-[#3d3d3d] border-[#3A3E4E] items-center justify-center"
                     >
                         <svg
                                 class="fill-white group-hover:fill-interface-100"
@@ -529,7 +222,7 @@
                             </g>
                             <defs>
                                 <clipPath id="clip0_537_18883">
-                                    <rect width="40" height="40" />
+                                    <rect width="40" height="40"/>
                                 </clipPath>
                             </defs>
                         </svg>
@@ -606,96 +299,83 @@
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M57.1515 21.3477V46.9823C57.1515 51.136 53.7846 54.5041 49.6309 54.5041H42.6758C46.8295 54.5041 50.1964 51.136 50.1964 46.9823V21.3477H57.1515Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M10.0598 17.3598C11.3095 17.3598 12.3227 16.3467 12.3227 15.0969C12.3227 13.8471 11.3095 12.834 10.0598 12.834C8.81001 12.834 7.79688 13.8471 7.79688 15.0969C7.79688 16.3467 8.81001 17.3598 10.0598 17.3598Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M18.052 17.3598C19.3017 17.3598 20.3149 16.3467 20.3149 15.0969C20.3149 13.8471 19.3017 12.834 18.052 12.834C16.8022 12.834 15.7891 13.8471 15.7891 15.0969C15.7891 16.3467 16.8022 17.3598 18.052 17.3598Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M26.0442 17.3598C27.2939 17.3598 28.3071 16.3467 28.3071 15.0969C28.3071 13.8471 27.2939 12.834 26.0442 12.834C24.7944 12.834 23.7812 13.8471 23.7812 15.0969C23.7812 16.3467 24.7944 17.3598 26.0442 17.3598Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M38.547 14.8223L43.5002 8.89365C43.229 8.86408 42.9539 8.84766 42.6747 8.84766H8.37137C4.21769 8.84766 0.849609 12.2146 0.849609 16.3694V21.3474H29.2728C31.0918 19.1368 31.5654 16.2453 38.547 14.8223Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M43.6229 19.8964C43.5223 20.4003 43.3941 20.8834 43.2422 21.3466H50.1964V16.3686C50.1964 15.7535 50.1209 15.1562 49.9816 14.584L43.6229 19.8964Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M54.3544 10.5176C54.0802 11.0121 53.7118 11.4664 53.2495 11.8526L49.9805 14.5838C50.1197 15.1561 50.1952 15.7533 50.1952 16.3684V21.3465H57.1503V16.3684C57.1503 14.0044 56.0593 11.8964 54.3544 10.5176Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M43.241 21.3477C41.2519 27.413 35.055 29.9169 29.538 26.8586C27.7016 25.8405 27.3455 23.3383 28.8237 21.847C28.9839 21.6853 29.1323 21.5185 29.2728 21.3477H0.849609V46.9823C0.849609 51.136 4.21769 54.5041 8.37137 54.5041H42.6747C46.8284 54.5041 50.1954 51.136 50.1954 46.9823V21.3477H43.241Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M38.5475 14.8223C31.0265 16.3552 31.0585 19.5924 28.8243 21.8466C27.3462 23.338 27.7021 25.8401 29.5385 26.8582C35.4768 30.1501 42.2039 26.9986 43.6223 19.8972L38.5475 14.8223Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M19.2668 32.2168H10.7042C9.09859 32.2168 7.79688 33.5185 7.79688 35.1242V43.6868C7.79688 45.2924 9.09859 46.5941 10.7042 46.5941H19.2668C20.8725 46.5941 22.1742 45.2924 22.1742 43.6868V35.1242C22.1742 33.5185 20.8725 32.2168 19.2668 32.2168Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M41.2974 32.6719H29.0196C27.7359 32.6719 26.6953 33.7125 26.6953 34.9962C26.6953 36.2799 27.7359 37.3205 29.0196 37.3205H41.2975C42.5812 37.3205 43.6218 36.2799 43.6218 34.9962C43.6218 33.7125 42.5811 32.6719 41.2974 32.6719Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                         <path
                                                 d="M41.2974 41.4902H29.0196C27.7359 41.4902 26.6953 42.5308 26.6953 43.8145C26.6953 45.0982 27.7359 46.1388 29.0196 46.1388H41.2975C42.5812 46.1388 43.6218 45.0982 43.6218 43.8145C43.6218 42.5309 42.5811 41.4902 41.2974 41.4902Z"
                                                 stroke-width="2"
                                                 stroke-miterlimit="10"
                                                 stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                        />
+                                                stroke-linejoin="round"></path>
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_123_2937">
-                                            <rect width="58" height="58" fill="white" />
+                                            <rect width="58" height="58" fill="white"></rect>
                                         </clipPath>
                                     </defs>
                                 </svg>
@@ -925,7 +605,7 @@
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_442_1156">
-                                            <rect width="58" height="58" fill="white" />
+                                            <rect width="58" height="58" fill="white"/>
                                         </clipPath>
                                     </defs>
                                 </svg>
@@ -1081,7 +761,7 @@
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_123_2937">
-                                            <rect width="58" height="58" fill="white" />
+                                            <rect width="58" height="58" fill="white"/>
                                         </clipPath>
                                     </defs>
                                 </svg>
@@ -1153,10 +833,10 @@
                             </div>
                             <div class="flex space-x-2 items-center">
                                 <h3 class="text-7xl leading-none text-new-500 font-bold">
-                                    5
+                                    1
                                 </h3>
                                 <p class="text-lg text-white font-medium">
-                                    Years <br />
+                                    Years <br/>
                                     Experience
                                 </p>
                             </div>
@@ -1171,7 +851,7 @@
                         </p>
                     </div>
                     <div class="mx-auto">
-                        <img src="assets/images/about/male.png" class="w-full" alt="" />
+                        <img src="{{ asset('images/MainImage4.png') }}" class="w-full" alt=""/>
                     </div>
                     <div>
                         <ul class="divide-y divide-[#494C5F]">
@@ -1321,63 +1001,56 @@
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Html</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >CSS</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Front-end</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >PHP</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Back-end</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Java Script</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Laravel</a
                                 >
                             </li>
                             <li>
                                 <a
                                         href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
-                                >C++</a
-                                >
-                            </li>
-                            <li>
-                                <a
-                                        href="#"
-                                        class="bg-[#16213B] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
+                                        class="bg-[#727273] block px-4 py-3 hover:bg-new-500 hover:text-interface-100 transition rounded-md text-white text-xl"
                                 >Figma</a
                                 >
                             </li>
@@ -1391,9 +1064,36 @@
                             </h3>
                         </div>
                         <ul class="mt-7 flex flex-wrap gap-x-12 gap-y-7">
+                            <li data-title="PHPStorm">
+                                <svg
+                                        class="fill-[#727273] hover:fill-new-500 transition"
+                                        width="53"
+                                        height="53"
+                                        viewBox="0 0 128 128"
+                                        fill="none"
+                                        id="phpstorm">
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                    <path
+                                            d="M61,87H35a2,2,0,0,0,0,4H61a2,2,0,0,0,0-4Z">
+                                    </path>
+                                    <path
+                                            d="M52.32,42.24a5.52,5.52,0,0,0-2-2.14,5.82,5.82,0,0,0-3.09-.82H41V50.57h6.88A4.71,4.71,0,0,0,51.64,49,5.81,5.81,0,0,0,53,45,5.91,5.91,0,0,0,52.32,42.24Zm0,0a5.52,5.52,0,0,0-2-2.14,5.82,5.82,0,0,0-3.09-.82H41V50.57h6.88A4.71,4.71,0,0,0,51.64,49,5.81,5.81,0,0,0,53,45,5.91,5.91,0,0,0,52.32,42.24ZM114.15,70.4l11.77-11.59a7.87,7.87,0,0,0,1.93-6.73L114.23,17.82a7.78,7.78,0,0,0-4.75-5.09L85.06,8.27A7.08,7.08,0,0,0,83,8a8.92,8.92,0,0,0-5,1.48l-9.51,7-1.35-4A7.73,7.73,0,0,0,62,7.87L26,.12A5.62,5.62,0,0,0,24.77,0a7.84,7.84,0,0,0-5.41,2.2L2.08,20.91a9,9,0,0,0-2,6.83L11.87,92.1a5,5,0,0,0,4.7,3.9H25v3a4,4,0,0,0,4,4h8.37l.76,6.32a7.18,7.18,0,0,0,4.24,5.35l34.85,12.9a7.87,7.87,0,0,0,2.69.43,9.17,9.17,0,0,0,4.5-1.1l41.53-25a4.33,4.33,0,0,0,1.6-5.62ZM80.4,12.7A5.08,5.08,0,0,1,83,12c.47,0,25.41,4.61,25.41,4.61a4,4,0,0,1,1.88,2.14l.07.28.1.27L124,53.21a4.12,4.12,0,0,1-.87,2.75L112.23,66.68,103,48.83V29a4,4,0,0,0-4-4H63.8ZM73.73,51.21l-3.14-.67a27.09,27.09,0,0,1-4.89-1.22,8.8,8.8,0,0,1-3.24-2.12,5.26,5.26,0,0,1-1.46-4,6,6,0,0,1,2.5-5.34,12,12,0,0,1,7-1.87,15.4,15.4,0,0,1,4.76.68,15.86,15.86,0,0,1,4.14,2.1l.11.09-2,2.82a.45.45,0,0,0,0,.09.62.62,0,0,1-.22-.11A14.76,14.76,0,0,0,73.77,40a9.55,9.55,0,0,0-7.1.16A3.05,3.05,0,0,0,64.84,43a2.66,2.66,0,0,0,1,2.11,5.17,5.17,0,0,0,2,1c.51.16,1.48.4,2.9.72L72,47a29.44,29.44,0,0,1,5,1.36,7,7,0,0,1,2.79,2.07A6.18,6.18,0,0,1,81,54.57,6.45,6.45,0,0,1,78.59,60a11.2,11.2,0,0,1-7.07,2,16.38,16.38,0,0,1-10.41-3.35L61,58.56s1.91-2.93,1.91-2.93a.57.57,0,0,1,.19.1,17,17,0,0,0,4.08,2.08c3.48,1.26,6.41,1,8.24-.17a3.41,3.41,0,0,0,1.74-2.92C77.16,53.56,76.58,52,73.73,51.21ZM25,29V92H16.57a1,1,0,0,1-.76-.62L4,27a5.08,5.08,0,0,1,1-3.39L22.29,4.92A3.91,3.91,0,0,1,24.77,4c.18,0,36.4,7.78,36.4,7.78a3.86,3.86,0,0,1,2.2,2L65.14,19l-8.06,6H29A4,4,0,0,0,25,29ZM41,61.91s0,.08-.09.09H37.1a.13.13,0,0,1-.1-.09V36.17A.38.38,0,0,1,37,36a.41.41,0,0,1,.16,0H47a11.27,11.27,0,0,1,5.31,1.2,8.57,8.57,0,0,1,3.46,3.26,9.56,9.56,0,0,1,.07,9.11,7.82,7.82,0,0,1-3.31,3.09A12,12,0,0,1,47,53.85H41Zm82.91,36.56-41.53,25a5.22,5.22,0,0,1-2.44.53,3.9,3.9,0,0,1-1.3-.18l-34.85-12.9a3.35,3.35,0,0,1-1.66-2.08L41.4,103H99a4,4,0,0,0,4-4V57.54l21,40.58A.37.37,0,0,1,123.88,98.47ZM51.64,49A5.81,5.81,0,0,0,53,45a5.91,5.91,0,0,0-.67-2.8,5.52,5.52,0,0,0-2-2.14,5.82,5.82,0,0,0-3.09-.82H41V50.57h6.88A4.71,4.71,0,0,0,51.64,49Z">
+                                    </path>
+                                    <defs>
+                                        <clipPath id="clip0_537_18545">
+                                            <rect
+                                                    width="52.6265"
+                                                    height="52"
+                                                    transform="translate(0 0.288086)"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="52"
                                         height="53"
                                         viewBox="0 0 52 53"
@@ -1421,32 +1121,7 @@
                             </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
-                                        width="53"
-                                        height="53"
-                                        viewBox="0 0 53 53"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_537_18545)">
-                                        <path
-                                                d="M21.3795 17.9248H21.3353L18.6166 26.9598H24.1866L21.3795 17.9248ZM21.3795 17.9248H21.3353L18.6166 26.9598H24.1866L21.3795 17.9248ZM43.3069 0.938477H9.31962C4.16592 0.938477 0 5.0548 0 10.1471V42.4298C0 47.5222 4.16592 51.6385 9.31962 51.6385H43.3069C48.4606 51.6385 52.6265 47.5222 52.6265 42.4298V10.1471C52.6265 5.0548 48.4606 0.938477 43.3069 0.938477ZM32.2337 36.7535H27.6505C27.4974 36.7748 27.3442 36.6672 27.3 36.5148L25.5023 31.3585H17.3452L15.678 36.4498C15.6348 36.6448 15.459 36.7748 15.2617 36.7535H11.1389C10.8984 36.7535 10.8326 36.6235 10.8984 36.3635L17.9588 16.2785C18.0246 16.0622 18.0904 15.8235 18.1777 15.5635C18.2661 15.1085 18.3093 14.6321 18.3093 14.1548C18.2877 14.0471 18.3751 13.9385 18.4851 13.9171H24.164C24.3398 13.9171 24.4271 13.9822 24.4497 14.0898L32.4527 36.4072C32.5185 36.6448 32.4527 36.7535 32.2337 36.7535ZM39.6888 36.4285C39.6888 36.6672 39.6014 36.7748 39.4041 36.7748H35.1066C34.8866 36.7748 34.7777 36.6448 34.7777 36.4285V19.7448C34.7777 19.5285 34.8651 19.4422 35.0624 19.4422H39.4041C39.6014 19.4422 39.6888 19.5498 39.6888 19.7448V36.4285ZM39.2283 16.8635C38.7247 17.3835 37.9785 17.6648 37.2333 17.6222C36.5096 17.6435 35.8076 17.3622 35.2813 16.8635C34.7777 16.3222 34.5146 15.6072 34.5361 14.8698C34.5146 14.1335 34.7993 13.4398 35.3255 12.9421C35.8518 12.4435 36.5538 12.1835 37.2775 12.1835C38.1326 12.1835 38.7905 12.4435 39.2725 12.9421C39.7546 13.4621 40.0177 14.1548 39.9961 14.8698C40.0177 15.6072 39.7546 16.3222 39.2283 16.8635ZM21.3353 17.9248L18.6166 26.9598H24.1866L21.3795 17.9248H21.3353Z"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_537_18545">
-                                            <rect
-                                                    width="52.6265"
-                                                    height="52"
-                                                    transform="translate(0 0.288086)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="53"
                                         height="53"
                                         viewBox="0 0 53 53"
@@ -1471,7 +1146,7 @@
                             </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="54"
                                         height="53"
                                         viewBox="0 0 54 53"
@@ -1496,7 +1171,7 @@
                             </li>
                             <li>
                                 <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
+                                        class="fill-[#727273] hover:fill-new-500 transition"
                                         width="53"
                                         height="53"
                                         viewBox="0 0 53 53"
@@ -1519,746 +1194,13 @@
                                     </defs>
                                 </svg>
                             </li>
-                            <li>
-                                <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
-                                        width="53"
-                                        height="53"
-                                        viewBox="0 0 53 53"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_537_18565)">
-                                        <path
-                                                d="M27.177 27.6484C27.177 27.6484 27.1358 27.6484 27.0945 27.6484C25.6512 31.8546 24.2079 36.0608 22.7646 40.267C25.8162 41.133 28.7853 41.0505 31.7131 40.0608C30.1873 35.8959 28.7028 31.7721 27.177 27.6484Z"
-                                        />
-                                        <path
-                                                d="M13.6103 20.4326C13.5691 20.4326 13.5691 20.4326 13.5279 20.4326C11.9196 24.2677 11.8371 28.144 13.4866 32.0202C14.8887 35.3192 17.2392 37.7522 20.4557 39.4017C20.4969 39.4017 20.4969 39.3605 20.5382 39.3605C18.2289 33.0099 15.9196 26.7419 13.6103 20.4326Z"
-                                        />
-                                        <path
-                                                d="M35.8373 22.1232C35.5074 21.5046 35.1362 20.9273 34.7651 20.3087C34.4352 19.7314 34.1878 19.1129 34.1053 18.4531C33.9403 17.0922 34.8476 15.8139 36.2084 15.5665C36.3321 15.5252 36.497 15.5252 36.7445 15.484C32.7032 12.1025 28.2084 10.9067 23.1775 12.185C19.5898 13.0922 16.8269 15.1541 14.6826 18.2881C15.4661 18.2881 16.1672 18.2881 16.8269 18.2881C17.6929 18.2469 18.5589 18.1644 19.4249 18.1232C19.8373 18.0819 20.0847 18.2881 20.1259 18.618C20.1672 18.9891 20.0022 19.2366 19.5486 19.2778C19.4249 19.319 19.3012 19.319 19.1775 19.319C18.7651 19.3603 18.394 19.4015 17.9403 19.4428C19.7135 24.7211 21.4867 29.9582 23.2187 35.1541C23.3012 35.1129 23.3424 35.0716 23.3424 35.0304C24.3733 31.9788 25.4043 28.9273 26.394 25.8345C26.4352 25.7108 26.394 25.5046 26.3527 25.3809C25.6929 23.484 24.9919 21.6283 24.2909 19.7314C24.2084 19.484 24.0847 19.4015 23.8373 19.4015C23.4249 19.4015 23.0125 19.319 22.6001 19.2778C22.2702 19.2366 22.1053 18.9891 22.1053 18.6593C22.1465 18.3294 22.3527 18.1232 22.6826 18.1232C22.8476 18.1232 22.9713 18.1644 23.1362 18.1644C24.7032 18.2056 26.3115 18.2469 27.8785 18.2881C28.7032 18.2881 29.5692 18.2056 30.394 18.1644C30.7651 18.1644 31.0125 18.3706 31.0537 18.7005C31.095 19.0304 30.8888 19.2778 30.5589 19.319C30.394 19.3603 30.2702 19.3603 30.1053 19.3603C29.6929 19.4015 29.2806 19.4428 28.8682 19.484C30.6414 24.7211 32.3733 29.8757 34.1465 35.1541C34.1878 35.0304 34.229 34.9891 34.229 34.9479C34.9713 32.5149 35.6723 30.0819 36.4146 27.6489C36.9919 25.7108 36.8269 23.8551 35.8373 22.1232Z"
-                                        />
-                                        <path
-                                                d="M39.837 0.308594H13.9401C6.76485 0.308594 0.90918 6.16426 0.90918 13.3395V39.2777C0.90918 46.4117 6.76485 52.2674 13.9401 52.2674H39.8783C47.0535 52.2674 52.9092 46.4117 52.9092 39.2364V13.3395C52.8679 6.16426 47.0123 0.308594 39.837 0.308594ZM42.971 27.1127C42.971 27.2364 42.971 27.3189 42.971 27.4426C42.8473 29.5869 42.3112 31.6488 41.3215 33.5457C38.7236 38.4529 34.7236 41.3395 29.1978 42.2467C28.703 42.3292 28.2081 42.3704 27.7133 42.3704H26.0638C25.9813 42.3704 25.8576 42.3704 25.7339 42.3704C23.5896 42.2467 21.569 41.7519 19.7133 40.7622C14.7648 38.1643 11.8783 34.1643 10.971 28.6385C10.8473 28.1024 10.8061 27.6488 10.8061 27.1127V25.4632C10.8061 25.3808 10.8061 25.257 10.8061 25.1333C10.9298 22.9478 11.4659 20.8859 12.4968 18.989C15.0947 14.123 19.0947 11.2777 24.538 10.3705C25.0329 10.288 25.569 10.2467 26.0638 10.2467H27.7133C27.837 10.2467 27.9195 10.2467 28.0432 10.2467C30.1463 10.3704 32.1669 10.8653 34.0638 11.855C39.0123 14.4529 41.9401 18.4529 42.8473 24.0199C42.9298 24.5148 42.971 25.0096 42.971 25.5045V27.1127Z"
-                                        />
-                                        <path
-                                                d="M39.7541 19.4014C39.7953 20.5148 39.7953 21.5457 39.6304 22.6179C39.4242 23.8137 39.053 24.9684 38.6407 26.123C37.1974 30.123 35.8365 34.123 34.4757 38.123C34.3932 38.3292 34.3108 38.5766 34.2695 38.7828C34.3108 38.7828 34.3108 38.824 34.352 38.824C38.2695 36.3911 40.6613 32.8859 41.3623 28.3086C41.8159 25.1746 41.2798 22.2055 39.7541 19.4014Z"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_537_18565">
-                                            <rect
-                                                    width="52"
-                                                    height="52"
-                                                    transform="translate(0.90918 0.288086)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
-                                        width="53"
-                                        height="53"
-                                        viewBox="0 0 53 53"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_537_18562)">
-                                        <path
-                                                d="M12.6904 30.3506C12.6904 27.2704 15.1962 24.7646 18.2764 24.7646H35.542C36.942 24.7646 38.0811 23.6256 38.0811 22.2256V7.90527C38.0811 3.70511 34.664 0.288086 30.4639 0.288086H23.3545C19.1543 0.288086 15.7373 3.70511 15.7373 7.90527V12.0693H26.9092C27.7506 12.0693 28.4326 12.7513 28.4326 13.5928C28.4326 14.4342 27.7506 15.1162 26.9092 15.1162H8.52637C4.3262 15.1162 0.90918 18.5332 0.90918 22.7334V29.8428C0.90918 34.0429 4.3262 37.46 8.52637 37.46H12.6904V30.3506ZM23.3545 8.00684C22.513 8.00684 21.8311 7.32486 21.8311 6.4834C21.8311 5.64194 22.513 4.95996 23.3545 4.95996C24.196 4.95996 24.8779 5.64194 24.8779 6.4834C24.8779 7.32486 24.196 8.00684 23.3545 8.00684Z"
-                                        />
-                                        <path
-                                                d="M45.292 15.1162H41.1279V22.2256C41.1279 25.3058 38.6222 27.8115 35.542 27.8115H18.2764C16.8763 27.8115 15.7373 28.9505 15.7373 30.3506V44.6709C15.7373 48.8711 19.1543 52.2881 23.3545 52.2881H30.4639C34.664 52.2881 38.0811 48.8711 38.0811 44.6709V40.5068H26.9092C26.0677 40.5068 25.3857 39.8249 25.3857 38.9834C25.3857 38.1419 26.0677 37.46 26.9092 37.46H45.292C49.4922 37.46 52.9092 34.0429 52.9092 29.8428V22.7334C52.9092 18.5332 49.4922 15.1162 45.292 15.1162ZM30.4639 44.5693C31.3053 44.5693 31.9873 45.2513 31.9873 46.0928C31.9873 46.9342 31.3053 47.6162 30.4639 47.6162C29.6224 47.6162 28.9404 46.9342 28.9404 46.0928C28.9404 45.2513 29.6224 44.5693 30.4639 44.5693Z"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_537_18562">
-                                            <rect
-                                                    width="52"
-                                                    height="52"
-                                                    transform="translate(0.90918 0.288086)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
-                            <li>
-                                <svg
-                                        class="fill-[#1D2A47] hover:fill-new-500 transition"
-                                        width="53"
-                                        height="53"
-                                        viewBox="0 0 53 53"
-                                        fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <g clip-path="url(#clip0_537_18581)">
-                                        <path
-                                                d="M47.2903 52.2881H6.52805C3.42489 52.2881 0.90918 49.7724 0.90918 46.6692V5.90696C0.90918 2.80379 3.42489 0.288086 6.52805 0.288086H47.2902C50.3935 0.288086 52.9091 2.80379 52.9091 5.90696V46.6691C52.9092 49.7724 50.3935 52.2881 47.2903 52.2881Z"
-                                        />
-                                        <path
-                                                d="M26.9625 6.36523C15.9763 6.3626 7.06797 15.2666 7.06543 26.2528C7.06289 37.239 15.9668 46.1472 26.9531 46.1499C37.9393 46.1525 46.8475 37.2485 46.8502 26.2622C46.8502 26.2606 46.8502 26.2591 46.8502 26.2575C46.8501 15.2731 37.9469 6.36777 26.9625 6.36523Z"
-                                                fill="#091530"
-                                        />
-                                        <path
-                                                d="M18.6719 17.9668H21.9873V34.5437H18.6719V17.9668Z"
-                                                fill="currenColor"
-                                        />
-                                        <path
-                                                d="M25.3027 31.2285H35.2489V34.5439H25.3027V31.2285Z"
-                                                fill="currenColor"
-                                        />
-                                        <path
-                                                d="M25.3027 24.5977H35.2489V27.913H25.3027V24.5977Z"
-                                                fill="currenColor"
-                                        />
-                                        <path
-                                                d="M25.3027 17.9668H35.2489V21.2822H25.3027V17.9668Z"
-                                                fill="currenColor"
-                                        />
-                                    </g>
-                                    <defs>
-                                        <clipPath id="clip0_537_18581">
-                                            <rect
-                                                    width="52"
-                                                    height="52"
-                                                    fill="white"
-                                                    transform="translate(0.90918 0.288086)"
-                                            />
-                                        </clipPath>
-                                    </defs>
-                                </svg>
-                            </li>
                         </ul>
-                    </div>
-                </div>
-                <!-- Clients -->
-                <div class="pt-16">
-                    <div class="border-b border-[#494C5F] pb-3">
-                        <h3 class="text-borderl-500 font-semibold text-2xl">
-                            Freelance Clients
-                        </h3>
-                    </div>
-                    <div
-                            class="grid items-center grid-cols-2 gap-6 md:grid-cols-3 xl:grid-cols-6 xl:divide-x divide-white divide-opacity-20 mt-10 pb-8"
-                    >
-                        <a href="#" class="px-7">
-                            <img
-                                    src="assets/images/clients/f-c-2.png"
-                                    class="opacity-30 hover:opacity-100 transition"
-                                    alt="Logo"
-                            />
-                        </a>
-                        <a href="#" class="px-7">
-                            <img
-                                    src="assets/images/clients/f-c-2.png"
-                                    class="opacity-30 hover:opacity-100 transition"
-                                    alt=""
-                            />
-                        </a>
-                        <a href="#" class="px-7">
-                            <img
-                                    src="assets/images/clients/f-c-3.png"
-                                    class="opacity-30 hover:opacity-100 transition"
-                                    alt="Logo"
-                            />
-                        </a>
-                        <a href="#" class="px-7">
-                            <img
-                                    src="assets/images/clients/f-c-4.png"
-                                    class="opacity-30 hover:opacity-100 transition"
-                                    alt="Logo"
-                            />
-                        </a>
-                        <a href="#" class="px-7">
-                            <img
-                                    src="assets/images/clients/f-c-5.png"
-                                    class="opacity-30 hover:opacity-100 transition"
-                                    alt="Logo"
-                            />
-                        </a>
-                        <a href="#" class="px-7">
-                            <img
-                                    src="assets/images/clients/f-c-1.png"
-                                    class="opacity-30 hover:opacity-100 transition"
-                                    alt="Logo"
-                            />
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Resume End -->
-
-    <!-- Grid Masonry -->
-    <section class="pb-120">
-        <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div class="max-w-xl mx-auto mb-10 text-center">
-                <h2 class="text-4xl leading-normal xl:text-5xl xl:leading-snug font-bold text-white mb-4">
-                    Let’s Check my
-                    <span class="relative z-30"
-                    ><span class="relative z-10"> Projects</span>
-                <svg
-                        class="absolute right-0 bottom-1"
-                        width="200"
-                        height="10"
-                        viewBox="0 0 243 10"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                          d="M3 7C45.1729 3.98151 151.615 -0.244386 240 7"
-                          stroke="#FFD233"
-                          stroke-width="6"
-                          stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-                </h2>
-                <p class="text-white text-xl mb-5">
-                    Donec dignissim, metus sit amet suscipit mauris vul putate odio,
-                    quis cursus nunc urna Aliqum tell us. Quisque hendrerit ..
-                </p>
-            </div>
-
-            <!-- Grid -->
-            <div
-                    class="grid grid-cols-1 gap-y-5 md:grid-cols-2 lg:grid-cols-3 md:gap-5 lg:gap-7"
-            >
-                <!-- Single Item -->
-                <div
-                        class="relative group min-h-[370px] rounded-lg cursor-pointer overflow-hidden"
-                        style="
-                background: url('assets/images/portfolio/ms-1.jpg') no-repeat
-                  center center/cover;
-              "
-                >
-                    <div
-                            class="bg-interface-100 bg-opacity-0 transition-opacity duration-500 ease-in-out absolute w-full h-full group-hover:bg-opacity-80 rounded-lg flex flex-col items-center justify-center"
-                    >
-                        <div
-                                class="transform transition-transform duration-700 ease-in-out translate-y-24 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 max-w-xs flex flex-col items-center justify-center text-center"
-                        >
-                            <h3 class="text-white">
-                                <a
-                                        href="portfolio-details.html"
-                                        class="text-3xl font-semibold text-white"
-                                >User Data Collects for Movie App</a
-                                >
-                            </h3>
-                            <span class="flex items-center gap-2 text-white">
-                    <span
-                            class="w-2 h-2 rounded-full inline-block bg-new-500"
-                    ></span>
-                    UI UX Project</span
-                            >
-                            <a
-                                    href="portfolio-details.html"
-                                    class="grid place-content-center transition mt-6 px-3 py-2 border border-new-500 text-new-500 text-sm rounded"
-                            >View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Item -->
-                <div
-                        class="relative group min-h-[370px] rounded-lg cursor-pointer overflow-hidden lg:col-span-2"
-                        style="
-                background: url('assets/images/portfolio/ms-2.jpg') no-repeat
-                  center center/cover;
-              "
-                >
-                    <div
-                            class="bg-interface-100 bg-opacity-0 transition-opacity duration-500 ease-in-out absolute w-full h-full group-hover:bg-opacity-80 rounded-lg flex flex-col items-center justify-center"
-                    >
-                        <div
-                                class="transform transition-transform duration-700 ease-in-out translate-y-24 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 max-w-xs flex flex-col items-center justify-center text-center"
-                        >
-                            <h3 class="text-white">
-                                <a
-                                        href="portfolio-details.html"
-                                        class="text-3xl font-semibold text-white"
-                                >User Data Collects for Movie App</a
-                                >
-                            </h3>
-                            <span class="flex items-center gap-2 text-white">
-                    <span
-                            class="w-2 h-2 rounded-full inline-block bg-new-500"
-                    ></span>
-                    UI UX Project</span
-                            >
-                            <a
-                                    href="portfolio-details.html"
-                                    class="grid place-content-center mt-6 px-3 py-2 border border-new-500 text-new-500 text-sm rounded"
-                            >View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Item -->
-                <div
-                        class="relative group min-h-[370px] rounded-lg cursor-pointer overflow-hidden"
-                        style="
-                background: url('assets/images/portfolio/ms-3.jpg') no-repeat
-                  center center/cover;
-              "
-                >
-                    <div
-                            class="bg-interface-100 bg-opacity-0 transition-opacity duration-500 ease-in-out absolute w-full h-full group-hover:bg-opacity-80 rounded-lg flex flex-col items-center justify-center"
-                    >
-                        <div
-                                class="transform transition-transform duration-700 ease-in-out translate-y-24 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 max-w-xs flex flex-col items-center justify-center text-center"
-                        >
-                            <h3 class="text-white">
-                                <a
-                                        href="portfolio-details.html"
-                                        class="text-3xl font-semibold text-white"
-                                >User Data Collects for Movie App</a
-                                >
-                            </h3>
-                            <span class="flex items-center gap-2 text-white">
-                    <span
-                            class="w-2 h-2 rounded-full inline-block bg-new-500"
-                    ></span>
-                    UI UX Project</span
-                            >
-                            <a
-                                    href="portfolio-details.html"
-                                    class="grid place-content-center mt-6 px-3 py-2 border border-new-500 text-new-500 text-sm rounded"
-                            >View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Item -->
-                <div
-                        class="relative group min-h-[370px] rounded-lg cursor-pointer overflow-hidden"
-                        style="
-                background: url('assets/images/portfolio/ms-4.jpg') no-repeat
-                  center center/cover;
-              "
-                >
-                    <div
-                            class="bg-interface-100 bg-opacity-0 transition-opacity duration-500 ease-in-out absolute w-full h-full group-hover:bg-opacity-80 rounded-lg flex flex-col items-center justify-center"
-                    >
-                        <div
-                                class="transform transition-transform duration-700 ease-in-out translate-y-24 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 max-w-xs flex flex-col items-center justify-center text-center"
-                        >
-                            <h3 class="text-white">
-                                <a
-                                        href="portfolio-details.html"
-                                        class="text-3xl font-semibold text-white"
-                                >User Data Collects for Movie App</a
-                                >
-                            </h3>
-                            <span class="flex items-center gap-2 text-white">
-                    <span
-                            class="w-2 h-2 rounded-full inline-block bg-new-500"
-                    ></span>
-                    UI UX Project</span
-                            >
-                            <a
-                                    href="portfolio-details.html"
-                                    class="grid place-content-center mt-6 px-3 py-2 border border-new-500 text-new-500 text-sm rounded"
-                            >View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Single Item -->
-                <div
-                        class="relative group min-h-[370px] rounded-lg cursor-pointer overflow-hidden"
-                        style="
-                background: url('assets/images/portfolio/ms-5.jpg') no-repeat
-                  center center/cover;
-              "
-                >
-                    <div
-                            class="bg-interface-100 bg-opacity-0 transition-opacity duration-500 ease-in-out absolute w-full h-full group-hover:bg-opacity-80 rounded-lg flex flex-col items-center justify-center"
-                    >
-                        <div
-                                class="transform transition-transform duration-700 ease-in-out translate-y-24 opacity-0 invisible group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 max-w-xs flex flex-col items-center justify-center text-center"
-                        >
-                            <h3 class="text-white">
-                                <a
-                                        href="portfolio-details.html"
-                                        class="text-3xl font-semibold text-white"
-                                >User Data Collects for Movie App</a
-                                >
-                            </h3>
-                            <span class="flex items-center gap-2 text-white">
-                    <span
-                            class="w-2 h-2 rounded-full inline-block bg-new-500"
-                    ></span>
-                    UI UX Project</span
-                            >
-                            <a
-                                    href="portfolio-details.html"
-                                    class="grid place-content-center mt-6 px-3 py-2 border border-new-500 text-new-500 text-sm rounded"
-                            >View Project
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Button -->
-            <div class="flex justify-center mt-14">
-                <a
-                        href=""
-                        class="text-white text-lg font-medium rounded-lg border border-white py-3 px-8 text-center"
-                >See More</a
-                >
-            </div>
-        </div>
-    </section>
-    <!-- Grid Masonry End -->
-
-    <!-- Testimonial -->
-    <section
-            class="py-120"
-            style="
-          background: url('assets/images/bg/testimonial-bg.jpg') no-repeat
-            center center/cover;
-        "
-    >
-        <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div class="max-w-2xl mx-auto text-center mb-10">
-                <h4 class="text-new-500 text-lg font-medium uppercase mb-2">
-                    CUSTOMER REVIEWS
-                </h4>
-                <h2 class="text-white font-bold lg:text-5xl text-4xl">
-                    What’s Our Customer Say
-                </h2>
-            </div>
-            <div class="swiper twoColumnFeedbackDark">
-                <div class="swiper-wrapper pb-14 lg:pb-16">
-                    <div class="swiper-slide">
-                        <div class="shadow-custom rounded-lg bg-[#16213C] p-7 relative">
-                            <ul class="flex space-x-2 mb-6">
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                            </ul>
-                            <q class="pb-8 block text-xl text-interface-200 italic">
-                                Pellentesque non nibh sapien a to a find rutrrnec into a
-                                fidn to end make it wow yes to maidn in avestibulu to
-                                mollis.
-                            </q>
-                            <div class="flex space-x-4">
-                                <img src="assets/images/testimonial/av-7.png" alt="" />
-                                <div>
-                                    <h4 class="font-semibold text-white text-xl">
-                                        Adward Gull
-                                    </h4>
-                                    <span class="text-pcolor-500 text-base"
-                                    >Travel Agent
-                      </span>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-7 right-7">
-                    <svg
-                            width="153"
-                            height="108"
-                            viewBox="0 0 153 108"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                              d="M31.9637 67.8045C32.2719 71.1359 32.0362 80.1919 23.3608 92.7849C22.7045 93.7351 22.8236 95.0168 23.6385 95.8315C27.1755 99.3685 29.3654 101.6 30.9013 103.162C32.921 105.222 33.843 106.16 35.1926 107.383C36.0936 108.193 37.457 108.207 38.3676 107.413C53.4889 94.2556 70.2842 67.0667 67.8539 33.7564C66.4297 14.197 52.1628 0.000146351 33.9317 0.000147945C15.2223 0.00014958 0.000510688 15.2195 0.000512323 33.9292C0.000513901 51.9781 14.1668 66.7796 31.9637 67.8045ZM33.9317 4.78144C49.5879 4.78144 61.8469 17.1129 63.0864 34.1018C63.0864 34.1018 63.0864 34.1018 63.0864 34.1042C65.8204 71.5678 43.5505 95.9016 36.822 102.345C36.166 101.698 35.4166 100.937 34.3123 99.8122C32.9817 98.4581 31.1605 96.6044 28.4057 93.8401C38.9373 77.6145 36.9504 66.0536 36.0797 64.3959C35.6664 63.6091 34.8189 63.0791 33.9317 63.0791C17.8579 63.0791 4.78181 50.003 4.78181 33.9292C4.78181 17.8576 17.8579 4.78145 33.9317 4.78144Z"
-                              fill="#1E2B48"
-                      />
-                      <path
-                              d="M116.868 67.8041C117.179 71.1261 116.95 80.1752 108.265 92.7845C107.611 93.7348 107.728 95.0164 108.543 95.8311C112.073 99.3612 114.26 101.591 115.794 103.152C117.821 105.216 118.745 106.157 120.094 107.383C120.996 108.193 122.359 108.205 123.27 107.416C138.391 94.2576 155.189 67.0733 152.763 33.756L152.763 33.7536C151.334 14.1966 137.065 -0.000250377 118.834 -0.000248783C100.124 -0.000247148 84.9024 15.2191 84.9024 33.9288C84.9024 51.9799 99.069 66.7838 116.868 67.8041ZM118.834 4.78105C134.487 4.78105 146.754 17.1125 147.996 34.1038L147.996 34.1014C150.722 71.5744 128.452 95.9036 121.724 102.345C121.066 101.698 120.314 100.932 119.207 99.8046C117.879 98.4506 116.06 96.5992 113.31 93.8397C123.842 77.6117 121.855 66.0532 120.984 64.3979C120.571 63.6111 119.721 63.0787 118.834 63.0787C102.76 63.0787 89.6837 50.0026 89.6837 33.9288C89.6837 17.8572 102.76 4.78106 118.834 4.78105Z"
-                              fill="#1E2B48"
-                      />
-                    </svg>
-                  </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="shadow-custom rounded-lg bg-[#16213C] p-7 relative">
-                            <ul class="flex space-x-2 mb-6">
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                            </ul>
-                            <q class="pb-8 block text-xl text-interface-200 italic">
-                                Pellentesque non nibh sapien a to a find rutrrnec into a
-                                fidn to end make it wow yes to maidn in avestibulu to
-                                mollis.
-                            </q>
-                            <div class="flex space-x-4">
-                                <img src="assets/images/testimonial/av-10.png" alt="" />
-                                <div>
-                                    <h4 class="font-semibold text-white text-xl">
-                                        Esthar Howard
-                                    </h4>
-                                    <span class="text-pcolor-500 text-base"
-                                    >Travel Agent
-                      </span>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-7 right-7">
-                    <svg
-                            width="153"
-                            height="108"
-                            viewBox="0 0 153 108"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                              d="M31.9637 67.8045C32.2719 71.1359 32.0362 80.1919 23.3608 92.7849C22.7045 93.7351 22.8236 95.0168 23.6385 95.8315C27.1755 99.3685 29.3654 101.6 30.9013 103.162C32.921 105.222 33.843 106.16 35.1926 107.383C36.0936 108.193 37.457 108.207 38.3676 107.413C53.4889 94.2556 70.2842 67.0667 67.8539 33.7564C66.4297 14.197 52.1628 0.000146351 33.9317 0.000147945C15.2223 0.00014958 0.000510688 15.2195 0.000512323 33.9292C0.000513901 51.9781 14.1668 66.7796 31.9637 67.8045ZM33.9317 4.78144C49.5879 4.78144 61.8469 17.1129 63.0864 34.1018C63.0864 34.1018 63.0864 34.1018 63.0864 34.1042C65.8204 71.5678 43.5505 95.9016 36.822 102.345C36.166 101.698 35.4166 100.937 34.3123 99.8122C32.9817 98.4581 31.1605 96.6044 28.4057 93.8401C38.9373 77.6145 36.9504 66.0536 36.0797 64.3959C35.6664 63.6091 34.8189 63.0791 33.9317 63.0791C17.8579 63.0791 4.78181 50.003 4.78181 33.9292C4.78181 17.8576 17.8579 4.78145 33.9317 4.78144Z"
-                              fill="#1E2B48"
-                      />
-                      <path
-                              d="M116.868 67.8041C117.179 71.1261 116.95 80.1752 108.265 92.7845C107.611 93.7348 107.728 95.0164 108.543 95.8311C112.073 99.3612 114.26 101.591 115.794 103.152C117.821 105.216 118.745 106.157 120.094 107.383C120.996 108.193 122.359 108.205 123.27 107.416C138.391 94.2576 155.189 67.0733 152.763 33.756L152.763 33.7536C151.334 14.1966 137.065 -0.000250377 118.834 -0.000248783C100.124 -0.000247148 84.9024 15.2191 84.9024 33.9288C84.9024 51.9799 99.069 66.7838 116.868 67.8041ZM118.834 4.78105C134.487 4.78105 146.754 17.1125 147.996 34.1038L147.996 34.1014C150.722 71.5744 128.452 95.9036 121.724 102.345C121.066 101.698 120.314 100.932 119.207 99.8046C117.879 98.4506 116.06 96.5992 113.31 93.8397C123.842 77.6117 121.855 66.0532 120.984 64.3979C120.571 63.6111 119.721 63.0787 118.834 63.0787C102.76 63.0787 89.6837 50.0026 89.6837 33.9288C89.6837 17.8572 102.76 4.78106 118.834 4.78105Z"
-                              fill="#1E2B48"
-                      />
-                    </svg>
-                  </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="shadow-custom rounded-lg bg-[#16213C] p-7 relative">
-                            <ul class="flex space-x-2 mb-6">
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                                <li class="text-porange-500">
-                                    <i class="fa-solid fa-star"></i>
-                                </li>
-                            </ul>
-                            <q class="pb-8 block text-xl text-interface-200 italic">
-                                Pellentesque non nibh sapien a to a find rutrrnec into a
-                                fidn to end make it wow yes to maidn in avestibulu to
-                                mollis.
-                            </q>
-                            <div class="flex space-x-4">
-                                <img src="assets/images/testimonial/av-4.png" alt="" />
-                                <div>
-                                    <h4 class="font-semibold text-white text-xl">
-                                        Hugo Boss
-                                    </h4>
-                                    <span class="text-pcolor-500 text-base"
-                                    >Travel Agent
-                      </span>
-                                </div>
-                            </div>
-                            <span class="absolute bottom-7 right-7">
-                    <svg
-                            width="153"
-                            height="108"
-                            viewBox="0 0 153 108"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                              d="M31.9637 67.8045C32.2719 71.1359 32.0362 80.1919 23.3608 92.7849C22.7045 93.7351 22.8236 95.0168 23.6385 95.8315C27.1755 99.3685 29.3654 101.6 30.9013 103.162C32.921 105.222 33.843 106.16 35.1926 107.383C36.0936 108.193 37.457 108.207 38.3676 107.413C53.4889 94.2556 70.2842 67.0667 67.8539 33.7564C66.4297 14.197 52.1628 0.000146351 33.9317 0.000147945C15.2223 0.00014958 0.000510688 15.2195 0.000512323 33.9292C0.000513901 51.9781 14.1668 66.7796 31.9637 67.8045ZM33.9317 4.78144C49.5879 4.78144 61.8469 17.1129 63.0864 34.1018C63.0864 34.1018 63.0864 34.1018 63.0864 34.1042C65.8204 71.5678 43.5505 95.9016 36.822 102.345C36.166 101.698 35.4166 100.937 34.3123 99.8122C32.9817 98.4581 31.1605 96.6044 28.4057 93.8401C38.9373 77.6145 36.9504 66.0536 36.0797 64.3959C35.6664 63.6091 34.8189 63.0791 33.9317 63.0791C17.8579 63.0791 4.78181 50.003 4.78181 33.9292C4.78181 17.8576 17.8579 4.78145 33.9317 4.78144Z"
-                              fill="#1E2B48"
-                      />
-                      <path
-                              d="M116.868 67.8041C117.179 71.1261 116.95 80.1752 108.265 92.7845C107.611 93.7348 107.728 95.0164 108.543 95.8311C112.073 99.3612 114.26 101.591 115.794 103.152C117.821 105.216 118.745 106.157 120.094 107.383C120.996 108.193 122.359 108.205 123.27 107.416C138.391 94.2576 155.189 67.0733 152.763 33.756L152.763 33.7536C151.334 14.1966 137.065 -0.000250377 118.834 -0.000248783C100.124 -0.000247148 84.9024 15.2191 84.9024 33.9288C84.9024 51.9799 99.069 66.7838 116.868 67.8041ZM118.834 4.78105C134.487 4.78105 146.754 17.1125 147.996 34.1038L147.996 34.1014C150.722 71.5744 128.452 95.9036 121.724 102.345C121.066 101.698 120.314 100.932 119.207 99.8046C117.879 98.4506 116.06 96.5992 113.31 93.8397C123.842 77.6117 121.855 66.0532 120.984 64.3979C120.571 63.6111 119.721 63.0787 118.834 63.0787C102.76 63.0787 89.6837 50.0026 89.6837 33.9288C89.6837 17.8572 102.76 4.78106 118.834 4.78105Z"
-                              fill="#1E2B48"
-                      />
-                    </svg>
-                  </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="service-pagination dev-style swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-    <!-- Testimonial End -->
-
-    <!-- Recent News  -->
-    <section class="py-120">
-        <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div class="max-w-lg mx-auto text-center mb-10">
-                <h2 class="text-white font-bold text-4xl leading-normal lg:text-5xl lg:leading-tight">
-                    Stay up to date with our news.
-                </h2>
-            </div>
-
-            <div class="swiper blogSliderDark">
-                <div class="swiper-wrapper pb-14 lg:pb-16">
-                    <article class="swiper-slide">
-                        <div class="bg-interface-600 shadow-custom rounded p-5">
-                            <a href="blog-details.html" class="block mb-6 rounded">
-                                <img
-                                        src="assets/images/blogs/th-9.jpg"
-                                        class="w-full rounded"
-                                        alt="Human"
-                                />
-                            </a>
-                            <div class="pl-1 pr-12">
-                                <div class="flex space-x-2 mb-3.5">
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Digital</a
-                                    >
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Marketing</a
-                                    >
-                                </div>
-                                <h3
-                                        class="blog-title title-light mb-2 text-white transition font-semibold text-2xl"
-                                >
-                                    <a href="blog-details.html"
-                                    >Definitive Guide to Make a Daily More Productive
-                                        Working Flow.</a
-                                    >
-                                </h3>
-                                <span class="text-sm text-interface-200">9 days read</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="swiper-slide">
-                        <div class="bg-interface-600 shadow-custom rounded p-5">
-                            <a href="blog-details.html" class="block mb-6 rounded">
-                                <img
-                                        src="assets/images/blogs/th-8.jpg"
-                                        class="w-full rounded"
-                                        alt="Human"
-                                />
-                            </a>
-                            <div class="pl-1 pr-12">
-                                <div class="flex space-x-2 mb-3.5">
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Digital</a
-                                    >
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Marketing</a
-                                    >
-                                </div>
-                                <h3
-                                        class="blog-title title-light mb-2 text-white transition font-semibold text-2xl"
-                                >
-                                    <a href="blog-details.html"
-                                    >The Highly Creative UI/UX Workflow from a Silicon
-                                        Valley.</a
-                                    >
-                                </h3>
-                                <span class="text-sm text-interface-200">3 days read</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="swiper-slide">
-                        <div class="bg-interface-600 shadow-custom rounded p-5">
-                            <a href="blog-details.html" class="block mb-6 rounded">
-                                <img
-                                        src="assets/images/blogs/th-7.jpg"
-                                        class="w-full rounded"
-                                        alt="Human"
-                                />
-                            </a>
-                            <div class="pl-1 pr-12">
-                                <div class="flex space-x-2 mb-3.5">
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Digital</a
-                                    >
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Marketing</a
-                                    >
-                                </div>
-                                <h3
-                                        class="blog-title title-light mb-2 text-white font-semibold text-2xl"
-                                >
-                                    <a href="blog-details.html"
-                                    >Organic Food Isn’t Much Better For Your Future
-                                        Health.</a
-                                    >
-                                </h3>
-                                <span class="text-sm text-interface-200">3 days read</span>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="swiper-slide">
-                        <div class="bg-interface-600 shadow-custom rounded p-5">
-                            <a href="blog-details.html" class="block mb-6 rounded">
-                                <img
-                                        src="assets/images/blogs/th-9.jpg"
-                                        class="w-full rounded"
-                                        alt="Human"
-                                />
-                            </a>
-                            <div class="pl-1 pr-12">
-                                <div class="flex space-x-2 mb-3.5">
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Digital</a
-                                    >
-                                    <a
-                                            href="#"
-                                            class="px-2 py-1.5 text-sm text-white bg-interface-50 rounded-md"
-                                    >Marketing</a
-                                    >
-                                </div>
-                                <h3
-                                        class="blog-title title-light mb-2 text-white transition font-semibold text-2xl"
-                                >
-                                    <a href="blog-details.html"
-                                    >Definitive Guide to Make a Daily More Productive
-                                        Working Flow.</a
-                                    >
-                                </h3>
-                                <span class="text-sm text-interface-200">9 days read</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <div class="swiper-pagination service-pagination dev-style"></div>
-            </div>
-        </div>
-    </section>
-    <!-- Recent News End -->
 
     <!-- CTA  -->
     <section
@@ -2281,11 +1223,10 @@
                 <div class="xl:w-5/12">
                     <div class="max-w-lg">
                         <p class="text-2xl text-interface-300 mb-8">
-                            I am product designer, who are excited about unique ideas and
-                            help.
+                            I'm a PHP developer with a passion for transforming unique ideas into reality.
                         </p>
                         <a
-                                href="contact-us.html"
+                                href="{{ asset('danielvdevcv.pdf') }}"
                                 class="bg-new-500 group inline-flex py-4 space-x-2 px-7 rounded-xl text-interface-500 text-lg"
                         >
                             <span>Download CV</span>
@@ -2313,7 +1254,6 @@
         </div>
     </section>
     <!-- CTA End -->
-
 </main>
 <!-- Main End -->
 
@@ -2331,7 +1271,7 @@
         >
             <div class="md:col-span-6 lg:col-span-3">
                 <a href="index.html" class="block mb-7">
-                    <img src="assets/images/logo/logo-dev-f.svg" alt="" />
+                    <img src="assets/images/logo/logo-dev-f.svg" alt=""/>
                 </a>
                 <p class="text-white text-base">
                     We work with a passion of taking challenges and creating new ones
@@ -2462,7 +1402,7 @@
                                     fill="#DAED1A"
                             />
                         </svg>
-                        <p class="text-white">30 Commercial Road Fratton, Australia</p>
+                        <p class="text-white">mun. Chișinău, Republic of Moldova</p>
                     </li>
                     <li class="flex space-x-2">
                         <svg
@@ -2477,8 +1417,8 @@
                                     fill="#DAED1A"
                             />
                         </svg>
-                        <a href="tel:1-888-452-1505" class="text-white text-base"
-                        >1-888-452-1505</a
+                        <a href="tel:+373 67 319 113" class="text-white text-base"
+                        >+373 67 319 113</a
                         >
                     </li>
                 </ul>
@@ -2507,40 +1447,6 @@
 </footer>
 <!-- Footer End -->
 
-<!-- Copyright -->
-<section class="px-4 bg-interface-100 py-5">
-    <p class="text-xl font-medium text-white text-center">
-        Copyright &copy; 2023 – All Rights Reserved. Made by
-        <a href="#">QuomodoSoft</a>
-    </p>
-</section>
-<!-- Copyright End -->
 {% block body %}{% endblock %}
 </body>
-<!-- Jquery JS -->
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-
-<!-- Migrate -->
-<script src="assets/js/jquery-migrate.min.js"></script>
-
-<!-- CounterUp -->
-<script src="assets/js/jquery.counterup.min.js"></script>
-
-<!-- CounterUp -->
-<script src="assets/js/waypoints.min.js"></script>
-
-<!-- Isotope -->
-<script src="assets/js/isotope.pkgd.min.js"></script>
-
-<!-- Imagesloaded -->
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-
-<!-- Lightbox -->
-<script src="assets/js/glightbox.min.js"></script>
-
-<!-- Swiper -->
-<script src="assets/js/swiper-bundle.min.js"></script>
-
-<!-- JS Files -->
-<script src="assets/js/app.js"></script>
 </html>
