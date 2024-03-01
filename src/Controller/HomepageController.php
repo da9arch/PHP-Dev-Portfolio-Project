@@ -8,7 +8,6 @@ use Symfony\Component\Routing\Attribute\Route;
 
 class HomepageController extends AbstractController
 {
-
     #[Route('/', name: 'app_homepage')]
     public function homepage(): Response
     {
