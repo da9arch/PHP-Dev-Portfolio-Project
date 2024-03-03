@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>{% block title %}Home Dev{% endblock %}</title>
+    <title>{% block title %}Welcome!{% endblock %}</title>
 
     {% block stylesheets %}
         {{ encore_entry_link_tags('app') }}
@@ -91,7 +91,7 @@
                         <span
                                 class="inline-block"
                                 style="
-                                        background: url('{{ asset('images/wide-line.svg') }}')
+                                        background: url('{{ asset('uploads/images/wide-line.svg') }}')
                                         no-repeat bottom;
                                         "
                         >
@@ -136,11 +136,15 @@
                     </div>
                 </div>
                 <!-- Right -->
-                <div class="lg:w-1/2">
-                    <div>
-                        <img src="{{ asset('images/MainImage4.png') }}" alt=""/>
-                    </div>
+                {% set imageName = 'MainImage4.png' %}
+                <div>
+                    {% if imageExists(imageName) %}
+                        <img src="{{ asset('uploads/images/' ~ imageName) }}" alt=""/>
+                    {% else %}
+                        <img src="{{ asset('uploads/images/placeholder1.jpg') }}" alt="Placeholder"/>
+                    {% endif %}
                 </div>
+
             </div>
         </div>
     </section>
@@ -271,7 +275,7 @@
                 <div class="xl:col-span-3">
                     <p class="text-white text-xl">
                         We put your ideas and thus your wishes in the form of a unique
-                        web project that inspires you and you customers. We’ve expert
+                        web project that inspires you and your customers. We’ve expert
                         team to solve your problems.
                     </p>
                 </div>
@@ -404,14 +408,12 @@
                                             d="M7.10156 18.0748L17.2491 7.92383"
                                             stroke-width="1.5"
                                             stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                    />
+                                            stroke-linejoin="round"></path>
                                     <path
                                             d="M7.10156 7.92383H17.2491V18.0748"
                                             stroke-width="1.5"
                                             stroke-linecap="round"
-                                            stroke-linejoin="round"
-                                    />
+                                            stroke-linejoin="round"></path>
                                 </svg>
                             </a>
                             <img
@@ -851,7 +853,7 @@
                         </p>
                     </div>
                     <div class="mx-auto">
-                        <img src="{{ asset('images/MainImage4.png') }}" class="w-full" alt=""/>
+                        <img src="{{ asset('uploads/images/MainImage4.png') }}" class="w-full" alt=""/>
                     </div>
                     <div>
                         <ul class="divide-y divide-[#494C5F]">
@@ -1188,8 +1190,7 @@
                                             <rect
                                                     width="52.7879"
                                                     height="52"
-                                                    transform="translate(0 0.288086)"
-                                            />
+                                                    transform="translate(0 0.288086)"></rect>
                                         </clipPath>
                                     </defs>
                                 </svg>
@@ -1226,7 +1227,7 @@
                             I'm a PHP developer with a passion for transforming unique ideas into reality.
                         </p>
                         <a
-                                href="{{ asset('danielvdevcv.pdf') }}"
+                                href="{{ asset('uploads/VrabiiDanielPHPDevCv.pdf') }}"
                                 class="bg-new-500 group inline-flex py-4 space-x-2 px-7 rounded-xl text-interface-500 text-lg"
                         >
                             <span>Download CV</span>
@@ -1244,8 +1245,7 @@
                                 />
                                 <path
                                         d="M4.3425 13.876C4.13563 13.876 3.93723 13.9582 3.79096 14.1044C3.64468 14.2507 3.5625 14.4491 3.5625 14.656V17.2262C3.56344 18.0776 3.90208 18.8939 4.50411 19.4959C5.10615 20.098 5.92241 20.4366 6.77381 20.4375H17.2262C18.0776 20.4366 18.8939 20.098 19.4959 19.4959C20.0979 18.8939 20.4366 18.0776 20.4375 17.2262V14.656C20.4375 14.5535 20.4173 14.4521 20.3781 14.3575C20.3389 14.2628 20.2815 14.1769 20.209 14.1044C20.1366 14.032 20.0506 13.9746 19.956 13.9354C19.8614 13.8962 19.7599 13.876 19.6575 13.876C19.5551 13.876 19.4536 13.8962 19.359 13.9354C19.2644 13.9746 19.1784 14.032 19.106 14.1044C19.0335 14.1769 18.9761 14.2628 18.9369 14.3575C18.8977 14.4521 18.8775 14.5535 18.8775 14.656V17.2262C18.877 17.664 18.7029 18.0838 18.3933 18.3933C18.0837 18.7029 17.664 18.877 17.2262 18.8775H6.77381C6.33601 18.877 5.91628 18.7029 5.60671 18.3933C5.29713 18.0838 5.123 17.664 5.1225 17.2262V14.656C5.12252 14.5535 5.10237 14.4521 5.06318 14.3575C5.02399 14.2628 4.96653 14.1768 4.8941 14.1044C4.82166 14.0319 4.73567 13.9745 4.64102 13.9353C4.54638 13.8961 4.44494 13.876 4.3425 13.876Z"
-                                        fill="#04091E"
-                                />
+                                        fill="#04091E"></path>
                             </svg>
                         </a>
                     </div>

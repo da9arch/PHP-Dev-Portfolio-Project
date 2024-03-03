@@ -3309,6 +3309,11 @@ select{
     background-color: rgb(13 13 13 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#c4c2c2\]{
+    --tw-bg-opacity: 1;
+    background-color: rgb(196 194 194 / var(--tw-bg-opacity));
+}
+
 .bg-\[rgb\(255\2c 0\2c 0\)\]{
     --tw-bg-opacity: 1;
     background-color: rgb(255 0 0 / var(--tw-bg-opacity));
