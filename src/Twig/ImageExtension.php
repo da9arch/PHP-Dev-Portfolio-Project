@@ -15,7 +15,6 @@ class ImageExtension extends AbstractExtension
         private string $imagesDir
     )
     {
-        $this->imagesDir = $imagesDir;
     }
 
     public function getFunctions(): array
