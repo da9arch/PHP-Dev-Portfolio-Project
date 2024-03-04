@@ -851,14 +851,15 @@
                             and during that time, I've gained experience
                         </p>
                     </div>
-                    {% set imageName = 'MainImage4.png' %}
                     <div>
+                        {% set imageName = 'MainImage4.png' %}
                         {% if imageExists(imageName) %}
                             <img src="{{ asset('uploads/images/' ~ imageName) }}" alt=""/>
                         {% else %}
                             <img src="{{ asset('uploads/images/placeholder1.jpg') }}" alt="Placeholder"/>
                         {% endif %}
                     </div>
+
                     <div>
                         <ul class="divide-y divide-[#494C5F]">
                             <li class="flex justify-between items-center pl-4 py-5">
