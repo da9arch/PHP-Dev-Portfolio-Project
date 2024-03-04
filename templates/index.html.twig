@@ -120,8 +120,7 @@
                                         stroke="#04091E"
                                         stroke-width="1.5"
                                         stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                />
+                                        stroke-linejoin="round"></path>
                             </svg>
                         </a>
                     </div>
@@ -852,8 +851,13 @@
                             and during that time, I've gained experience
                         </p>
                     </div>
-                    <div class="mx-auto">
-                        <img src="{{ asset('uploads/images/MainImage4.png') }}" class="w-full" alt=""/>
+                    {% set imageName = 'MainImage4.png' %}
+                    <div>
+                        {% if imageExists(imageName) %}
+                            <img src="{{ asset('uploads/images/' ~ imageName) }}" alt=""/>
+                        {% else %}
+                            <img src="{{ asset('uploads/images/placeholder1.jpg') }}" alt="Placeholder"/>
+                        {% endif %}
                     </div>
                     <div>
                         <ul class="divide-y divide-[#494C5F]">

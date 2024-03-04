@@ -5,12 +5,15 @@ namespace App\Twig;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFunction;
 use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\DependencyInjection\Attribute\Autowire;
 
 class ImageExtension extends AbstractExtension
 {
-    public string $imagesDir;
 
-    public function __construct(string $imagesDir)
+    public function __construct(
+        #[Autowire('uploaded_images_dir')]
+        private string $imagesDir
+    )
     {
         $this->imagesDir = $imagesDir;
     }
