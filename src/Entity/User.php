@@ -3,7 +3,6 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
-use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
@@ -12,22 +11,22 @@ class User
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column(nullable: false)]
-    private ?int $id = null;
+    #[ORM\Column]
+    private int $id;
 
-    #[ORM\Column(length: 255, nullable: false)]
-    private ?string $username = null;
+    #[ORM\Column(length: 255)]
+    private string $username;
 
-    #[ORM\Column(length: 255, nullable: false)]
-    private ?string $email = null;
+    #[ORM\Column(length: 255)]
+    private string $email;
 
-    #[ORM\Column(length: 255, nullable: false)]
-    private ?string $password = null;
+    #[ORM\Column(length: 255)]
+    private string $password;
 
-    #[ORM\Column(type: 'json', nullable: false)]
+    #[ORM\Column(type: 'json')]
     private array $roles = [];
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -39,7 +38,7 @@ class User
         return $this;
     }
 
-    public function getUsername(): ?string
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -51,7 +50,7 @@ class User
         return $this;
     }
 
-    public function getEmail(): ?string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -63,7 +62,7 @@ class User
         return $this;
     }
 
-    public function getPassword(): ?string
+    public function getPassword(): string
     {
         return $this->password;
     }

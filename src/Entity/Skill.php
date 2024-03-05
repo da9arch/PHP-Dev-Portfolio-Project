@@ -10,16 +10,16 @@ class Skill
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
-    #[ORM\Column(nullable: false)]
-    private ?int $id = null;
+    #[ORM\Column]
+    private int $id;
 
-    #[ORM\Column(length: 255, nullable: false)]
-    private ?string $slug = null;
+    #[ORM\Column(length: 255)]
+    private string $slug;
 
-    #[ORM\Column(length: 255, nullable: false)]
-    private ?string $name = null;
+    #[ORM\Column(length: 255)]
+    private string $name;
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
     }
@@ -31,7 +31,7 @@ class Skill
         return $this;
     }
 
-    public function getSlug(): ?string
+    public function getSlug(): string
     {
         return $this->slug;
     }
@@ -43,7 +43,7 @@ class Skill
         return $this;
     }
 
-    public function getName(): ?string
+    public function getName(): string
     {
         return $this->name;
     }
