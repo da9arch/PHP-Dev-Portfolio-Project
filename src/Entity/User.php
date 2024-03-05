@@ -12,24 +12,24 @@ class User
     #[ORM\Id]
     #[ORM\GeneratedValue]
     #[ORM\Column]
-    private ?int $id = null;
+    private int $id;
 
     #[ORM\Column(length: 255)]
-    private ?string $username = null;
+    private string $username;
 
     #[ORM\Column(length: 255)]
-    private ?string $email = null;
+    private string $email;
 
     #[ORM\Column(length: 255)]
-    private ?string $password = null;
+    private string $password;
 
-    #[ORM\Column(length: 255)]
-    private ?array $roles = null;
+    #[ORM\Column(type: 'json')]
+    private array $roles = [];
 
-    public function getId(): ?int
+    public function getId(): int
     {
         return $this->id;
-    }make
+    }
 
     public function setId(int $id): static
     {
@@ -38,7 +38,7 @@ class User
         return $this;
     }
 
-    public function getUsername(): ?string
+    public function getUsername(): string
     {
         return $this->username;
     }
@@ -50,7 +50,7 @@ class User
         return $this;
     }
 
-    public function getEmail(): ?string
+    public function getEmail(): string
     {
         return $this->email;
     }
@@ -62,7 +62,7 @@ class User
         return $this;
     }
 
-    public function getPassword(): ?string
+    public function getPassword(): string
     {
         return $this->password;
     }
@@ -74,12 +74,12 @@ class User
         return $this;
     }
 
-    public function getRoles(): ?string
+    public function getRoles(): array
     {
         return $this->roles;
     }
 
-    public function setRoles(string $roles): static
+    public function setRoles(array $roles): static
     {
         $this->roles = $roles;
 
