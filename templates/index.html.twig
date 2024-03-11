@@ -125,9 +125,9 @@
                 <div>
                     {% set imageName = 'mainimage1.png' %}
                     {% if image_exists(imageName) %}
-                        <img src="{{ asset('uploads/images/' ~ imageName) }}" alt="" width="600" height="500"/>
+                        <img src="{{ asset('/images/' ~ imageName) }}" alt="" width="600" height="500"/>
                     {% else %}
-                        <img src="{{ asset('uploads/placeholders/placeholder1.jpg') }}" alt="Placeholder"/>
+                        <img src="{{ asset('placeholders/placeholder1.jpg') }}" alt="Placeholder"/>
                     {% endif %}
                 </div>
             </div>
@@ -308,9 +308,9 @@
                     <div>
                         {% set imageName = 'mainimage1.png' %}
                         {% if image_exists(imageName) %}
-                            <img src="{{ asset('uploads/images/' ~ imageName) }}" alt=""/>
+                            <img src="{{ asset('/images/' ~ imageName) }}" alt=""/>
                         {% else %}
-                            <img src="{{ asset('uploads/placeholders/placeholder1.jpg') }}" alt="Placeholder"/>
+                            <img src="{{ asset('/placeholders/placeholder1.jpg') }}" alt="Placeholder"/>
                         {% endif %}
                     </div>
 
