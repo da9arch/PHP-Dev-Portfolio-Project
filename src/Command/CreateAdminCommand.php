@@ -38,25 +38,37 @@ class CreateAdminCommand extends Command
         $question = new Question('Please enter the username: ');
         $username = $helper->ask($input, $output, $question);
 
+        if (empty($username)) {
+            $output->writeln('Username cannot be empty!');
+            return Command::FAILURE;
+        }
+
         $question = new Question('Please enter the email: ');
         $email = $helper->ask($input, $output, $question);
+
+        if (empty($email)) {
+            $output->writeln('Email cannot be empty!');
+            return Command::FAILURE;
+        }
 
         $question = new Question('Please enter the password: ');
         $password = $helper->ask($input, $output, $question);
 
-        $question = new Question('Please enter the role (user/admin): ');
-        $role = $helper->ask($input, $output, $question);
+        if (empty($password)) {
+            $output->writeln('Password cannot be empty!');
+            return Command::FAILURE;
+        }
 
         $user = new User();
         $user->setUsername($username);
         $user->setEmail($email);
-        $user->setRoles([$role === 'admin' ? UserRole::ADMIN : UserRole::USER]);
+        $user->setRoles([UserRole::USER, UserRole::ADMIN]);
         $user->setPassword($this->passwordHasher->hashPassword($user, $password));
 
         $this->entityManager->persist($user);
         $this->entityManager->flush();
 
-        $output->writeln('Success created ' . $role . ' user with username "' . $username . '" and password "' . $password . '"!');
+        $output->writeln('Success created admin user with username "'.$username.'" and password "'.$password.'"!');
 
         return Command::SUCCESS;
     }
