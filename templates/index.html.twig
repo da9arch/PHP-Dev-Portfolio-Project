@@ -17,10 +17,10 @@
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
 </head>
-<body class="bg-[#0D0D0D]">
+<body>
 <!-- Header -->
 <!-- Navbar -->
-<nav class="bg-[#a5a5a5]">
+<nav class="fixed top-0 w-full backdrop-blur-md z-50">
     <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
         <div class="flex justify-between py-3">
 
@@ -32,31 +32,34 @@
                 <!-- Email -->
                 <div class="flex items-center space-x-2">
                     <i class="fa-solid fa-envelope text-new-500"></i>
-                    <a href="#" class="text-interface-200 text-base font-medium">danuvrabii@gmail
+                    <a href="#" class="text-white text-base font-medium">danuvrabii@gmail
                         .com</a>
                 </div>
 
                 <!-- Phone -->
                 <div class="space-x-2 hidden md:flex items-center">
                     <i class="fa-solid fa-phone text-new-500"></i>
-                    <a href="tel:+0168833300" class="text-interface-200 text-base font-medium">+373 67 319 113</a>
+                    <a href="tel:+0168833300" class="text-white text-base font-medium">+373 67 319 113</a>
                 </div>
 
                 <!-- Theme Switcher -->
-                <button id="theme-toggle" class="text-interface-200">
-                    <i id="light-theme-icon" class="fa-regular fa-sun"></i> <!-- Light theme -->
+                <button id="theme-toggle" class="text-white">
+                    <i id="light-theme-icon" class="fa-regular fa-sun "></i> <!-- Light theme -->
                     <i id="dark-theme-icon" class="fa-regular fa-moon"></i> <!-- Dark theme -->
                 </button>
 
                 <!-- Social Links -->
                 <div class="flex items-center space-x-6">
-                    <a href="https://www.facebook.com/iamdanielv/" class="group transition-all text-interface-200 hover:text-new-500" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/iamdanielv/" class="group transition-all text-white"
+                       target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-facebook"></i>
                     </a>
-                    <a href="https://t.me/iamdanielv" class="group transition-all text-interface-200 hover:text-new-500" target="_blank" rel="noopener noreferrer">
+                    <a href="https://t.me/iamdanielv" class="group transition-all text-white" target="_blank"
+                       rel="noopener noreferrer">
                         <i class="fa-brands fa-telegram-plane"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/danielvdev/" class="group transition-all text-interface-200 hover:text-new-500" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/danielvdev/" class="group transition-all text-white"
+                       target="_blank" rel="noopener noreferrer">
                         <i class="fa-brands fa-linkedin"></i>
                     </a>
                 </div>
@@ -272,9 +275,7 @@
     <!-- Resume -->
     <section class="pb-120">
         <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-            <div
-                    class="bg-interface-600 rounded-xl border border-[#494C5F] p-8 xl:p-14"
-            >
+            <div class="backdrop-filter backdrop-blur-lg bg-opacity-60 bg-black rounded-xl p-8 xl:p-14">
                 <h2 class="text-white text-4xl font-medium">Resume</h2>
                 <!-- About -->
                 <div class="grid lg:grid-cols-3 gap-5 xl:gap-10 items-center py-12 md:py-20">
@@ -660,9 +661,9 @@
     <section
             class="py-20"
             style="
-          background: url('{{ asset('/images/bg_02.jpg') }}') no-repeat center
-            center/cover;
-        "
+                    background: url('{{ asset('/images/bg_02.jpg') }}') no-repeat center
+                    center/cover;
+                    "
     >
         <div class="mx-auto px-4 sm:px-6 lg:max-w-7xl lg:px-8">
             <div
@@ -680,7 +681,7 @@
                             I'm a PHP developer with a passion for transforming unique ideas into reality.
                         </p>
                         <a
-                                href="{{ asset('uploads/VrabiiDanielPHPDevCv.pdf') }}"
+                                href="{{ asset('danielvdevcv.pdf') }}"
                                 class="bg-new-500 group inline-flex py-4 space-x-2 px-7 rounded-xl text-interface-500 text-lg"
                         >
                             <span>Download CV</span>
@@ -732,7 +733,7 @@
                 </p>
                 <div class="flex space-x-3 mt-7">
                     <a
-                            href="http://"
+                            href="https://www.facebook.com/iamdanielv/"
                             class="text-interface-200 hover:bg-new-500 hover:text-interface-100 transition-all text-lg w-10 h-10 rounded-full bg-white bg-opacity-10 inline-flex justify-center items-center"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -765,76 +766,6 @@
                     </a>
 
                 </div>
-            </div>
-            <div class="md:col-span-3 lg:col-span-2 pt-8 lg:pt-0 lg:pl-12">
-                <h4 class="mb-7 text-white text-2xl font-semibold">Links</h4>
-                <nav>
-                    <ul class="space-y-4">
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Home</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Service</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Blog</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Contact Us</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="md:col-span-3 lg:col-span-3 pt-8 lg:pt-0 lg:pl-12">
-                <h4 class="mb-7 text-white text-2xl font-semibold">Services</h4>
-                <nav>
-                    <ul class="space-y-4">
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Contact & Faq</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Track Your Order</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Shipping</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                    href="#"
-                                    class="font-medium transition hover:text-new-500 text-base text-white"
-                            >Trade Program</a
-                            >
-                        </li>
-                    </ul>
-                </nav>
             </div>
             <div class="md:col-span-6 lg:col-span-4 pt-8 lg:pt-0 lg:pl-12">
                 <h4 class="mb-7 text-white text-2xl font-semibold">
@@ -876,25 +807,6 @@
                         >
                     </li>
                 </ul>
-                <div class="mt-7">
-                    <h4 class="font-medium text-white text-xl mb-4">
-                        Subscribe Newsletter
-                    </h4>
-                    <form action="">
-                        <div class="relative w-full">
-                            <input
-                                    type="text"
-                                    class="rounded-lg w-full border-0 focus:ring-1 focus:ring-new-500 p-4 bg-[#363A4B] text-white"
-                                    placeholder="Email address"
-                            />
-                            <button
-                                    class="bg-new-500 right-0 font-medium absolute text-interface-100 rounded-r-lg p-4"
-                            >
-                                Subscribe
-                            </button>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
