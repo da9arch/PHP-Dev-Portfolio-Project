@@ -126,13 +126,14 @@
                 </div>
                 <!-- Right -->
                 <div>
-                    {% set imageName = 'mainimage1.png' %}
+                    {% set imageName = 'CV_Img.png' %}
                     {% if image_exists(imageName) %}
-                        <img src="{{ asset('/images/' ~ imageName) }}" alt="" width="600" height="500"/>
+                        <img src="{{ asset('/images/' ~ imageName) }}" alt="" width="600" height="500" style="border-radius: 50%; border: 14px solid #ffffff;"/>
                     {% else %}
-                        <img src="{{ asset('placeholders/placeholder1.jpg') }}" alt="Placeholder"/>
+                        <img src="{{ asset('placeholders/placeholder1.jpg') }}" alt="Placeholder" style="border-radius: 50%; border: 14px solid #d8ea37;"/>
                     {% endif %}
                 </div>
+
             </div>
         </div>
     </section>
@@ -307,11 +308,11 @@
                         </p>
                     </div>
                     <div>
-                        {% set imageName = 'mainimage1.png' %}
+                        {% set imageName = 'CV_Img.png' %}
                         {% if image_exists(imageName) %}
-                            <img src="{{ asset('/images/' ~ imageName) }}" alt=""/>
+                            <img src="{{ asset('/images/' ~ imageName) }}" alt="" width="600" height="500" style="border-radius: 50%; border: 10px solid #ffffff;"/>
                         {% else %}
-                            <img src="{{ asset('/placeholders/placeholder1.jpg') }}" alt="Placeholder"/>
+                            <img src="{{ asset('placeholders/placeholder1.jpg') }}" alt="Placeholder" style="border-radius: 50%; border: 10px solid #d8ea37;"/>
                         {% endif %}
                     </div>
 
@@ -741,7 +742,7 @@
                         <i class="fa-brands fa-facebook-f"></i>
                     </a>
                     <a
-                            href="http://"
+                            href="https://t.me/iamdanielv"
                             class="text-interface-200 hover:bg-new-500 hover:text-interface-100 transition-all text-lg w-10 h-10 rounded-full bg-white bg-opacity-10 inline-flex justify-center items-center"
                             target="_blank"
                             rel="noopener noreferrer"
@@ -749,15 +750,7 @@
                         <i class="fa-brands fa-telegram"></i>
                     </a>
                     <a
-                            href="http://"
-                            class="text-interface-200 hover:bg-new-500 hover:text-interface-100 transition-all text-lg w-10 h-10 rounded-full bg-white bg-opacity-10 inline-flex justify-center items-center"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                    >
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a
-                            href="http://"
+                            href="https://www.linkedin.com/in/danielvdev"
                             class="text-interface-200 hover:bg-new-500 hover:text-interface-100 transition-all text-lg w-10 h-10 rounded-full bg-white bg-opacity-10 inline-flex justify-center items-center"
                             target="_blank"
                             rel="noopener noreferrer"
