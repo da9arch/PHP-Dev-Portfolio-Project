@@ -1,0 +1,8 @@
+nav {
+    backdrop-filter: blur(10px); /* Эффект матового стекла */
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+}
+
+nav.fixed {
+    background-color: rgba(0, 0, 0, 0.5); /* Цвет фона при прикреплении навигационной панели */
+}

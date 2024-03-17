@@ -3,6 +3,9 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      backdropBlur: {
+        xs: '2px',
+      },
       screens: {
         sm: '576px',
         md: '768px',

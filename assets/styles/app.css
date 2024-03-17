@@ -1,3 +1,4 @@
+@import "../css/nav-bar.css";
 @import "../css/icon-container.css";
 @import "../css/theme-switcher-animation.css";
 @import "../css/font-awesome-all.min.css";
@@ -6554,12 +6555,6 @@ img {
     }
 
     /*Крепление навигационной панели при прокрутке*/
-    nav {
-        transition: background-color 0.3s ease-in-out; /* Добавляем плавный переход для фона */
-    }
 
-    nav.fixed {
-        background-color: #0D0D0D; /* Цвет фона при прикреплении навигационной панели */
-    }
 
 }
