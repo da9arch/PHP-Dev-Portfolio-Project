@@ -4,10 +4,14 @@ namespace App\Entity;
 
 use App\Repository\UserRepository;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]
+#[UniqueEntity('email', message: 'This email already exists')]
+#[UniqueEntity('username', message: 'This username already exists')]
 class User implements PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
@@ -15,13 +19,18 @@ class User implements PasswordAuthenticatedUserInterface
     #[ORM\Column]
     private int $id;
 
+    #[Assert\NotBlank(message: 'Username cannot be blank')]
     #[ORM\Column(length: 255)]
     private string $username;
 
-    #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: 'Email cannot be blank')]
+    #[Assert\Email(message: 'Invalid email format')]
+    #[ORM\Column(name: 'email', type: 'string', length: 255, unique: true)]
     private string $email;
 
-    #[ORM\Column(length: 255)]
+    #[Assert\NotBlank(message: 'Password cannot be blank')]
+    #[Assert\Length(min: 8, minMessage: 'Password should be at least 8 characters')]
+    #[ORM\Column(name: 'password', type: 'text', length: 255)]
     private string $password;
 
     #[ORM\Column(type: 'json')]
@@ -67,6 +76,7 @@ class User implements PasswordAuthenticatedUserInterface
     {
         return $this->password;
     }
+
 
     public function setPassword(string $password): static
     {
