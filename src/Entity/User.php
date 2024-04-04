@@ -7,10 +7,11 @@ use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
 use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Component\Validator\Mapping\ClassMetadata;
 
 #[ORM\Entity(repositoryClass: UserRepository::class)]
 #[ORM\Table(name: '`user`')]
+#[UniqueEntity('email', message: 'This email already exists')]
+#[UniqueEntity('username', message: 'This username already exists')]
 class User implements PasswordAuthenticatedUserInterface
 {
     #[ORM\Id]
@@ -94,25 +95,5 @@ class User implements PasswordAuthenticatedUserInterface
         $this->roles = $roles;
 
         return $this;
-    }
-
-    public static function loadValidatorMetadata(ClassMetadata $metadata): void
-    {
-        $metadata->addConstraint(new UniqueEntity([
-            'fields' => 'email',
-            'message' => 'This email is already in use.'
-        ]));
-
-        $metadata->addPropertyConstraints('email', [
-            new Assert\NotBlank(),
-            new Assert\Email(),
-        ]);
-
-        $metadata->addPropertyConstraints('password', [
-            new Assert\NotBlank(),
-            new Assert\Length(['min' => 8, 'minMessage' => 'Password should be at least 8 characters']),
-        ]);
-
-        $metadata->addPropertyConstraint('username', new Assert\NotBlank());
     }
 }
