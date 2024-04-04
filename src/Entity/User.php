@@ -115,5 +115,4 @@ class User implements PasswordAuthenticatedUserInterface
 
         $metadata->addPropertyConstraint('username', new Assert\NotBlank());
     }
-
 }
